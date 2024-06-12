@@ -711,7 +711,7 @@ id,name,neighbourhood,latitude,longitude,host_id,host_name,room_type,price,minim
 21431263,Rental unit in Shibuya-ku,Shinjuku Ku,35.69063,139.68387,50251074,Jun,Entire home/apt,29993,1,131,1.95,16,4.9,2.0,2.0,1.0
 21450574,Rental unit in Shinjuku City,Shinjuku Ku,35.69539,139.69579,30324135,DoMo,Entire home/apt,14000,1,75,1.12,34,4.75,1.0,2.0,1.0
 21213736,Home in 調布市,Chofu Shi,35.65072,139.56054,51624570,Risa,Private room,20571,2,56,0.83,68,4.98,2.0,2.0,1.0
-21464795,Condo in 港区,Minato Ku,35.66266250610352,139.7556610107422,155858313,Insik,Entire home/apt,18386,2,112,1.72,9,5.0,1.0,3.0,2.0
+21464795,Condo in 港区,Minato Ku,35.662662506103516,139.7556610107422,155858313,Insik,Entire home/apt,18386,2,112,1.72,9,5.0,1.0,3.0,2.0
 21219249,Home in Edogawa-ku,Edogawa Ku,35.66204,139.86995,51779608,Taka & Tomo,Entire home/apt,40000,2,102,1.5,202,4.78,3.0,6.0,2.0
 21479768,Villa in Nakano-ku,Nakano Ku,35.69299,139.68258,122297368,麗,Entire home/apt,38000,1,124,1.83,59,4.52,5.0,4.0,2.0
 21238107,Rental unit in Sumida-ku,Sumida Ku,35.69741,139.79834,46753843,Yoshi,Entire home/apt,9714,5,133,1.92,45,4.96,1.0,2.0,1.0
@@ -2041,7 +2041,7 @@ id,name,neighbourhood,latitude,longitude,host_id,host_name,room_type,price,minim
 33406960,Hotel in Chiyoda City,Chiyoda Ku,35.69907,139.77718,251263864,Marutomo,Private room,10911,2,28,0.56,117,4.71,1.0,2.0,1.0
 33256685,Rental unit in Shinjuku City,Shinjuku Ku,35.69576,139.70969,246127193,ｴﾙｴｰ3,Entire home/apt,22571,1,178,3.59,63,4.48,1.0,4.0,1.0
 33407654,Rental unit in Arakawa City,Arakawa Ku,35.73218,139.76141,51966672,Yoshi,Entire home/apt,11829,2,16,0.31,9,4.67,1.0,1.0,1.0
-33408043,Rental unit in Shinjuku City,Shinjuku Ku,35.69156646728516,139.7235565185547,115432704,ｼﾞｬﾝ,Entire home/apt,24671,1,45,0.89,25,4.89,1.0,6.0,1.0
+33408043,Rental unit in Shinjuku City,Shinjuku Ku,35.691566467285156,139.7235565185547,115432704,ｼﾞｬﾝ,Entire home/apt,24671,1,45,0.89,25,4.89,1.0,6.0,1.0
 33257127,Home in Shinjuku City,Shinjuku Ku,35.69328,139.70847,246127193,ｴﾙｴｰ3,Entire home/apt,37714,1,133,2.7,51,4.65,3.0,5.0,1.0
 33409446,Home in 東京,Shinjuku Ku,35.69985,139.70324,34150273,Yuko,Entire home/apt,38643,2,39,0.77,43,4.55,4.0,11.0,6.0
 33258150,Villa in Shinjuku City,Shinjuku Ku,35.70338,139.73903,249547971,宿,Entire home/apt,65000,1,86,1.67,99,4.64,2.0,2.0,1.0
@@ -2242,7 +2242,7 @@ id,name,neighbourhood,latitude,longitude,host_id,host_name,room_type,price,minim
 34732267,Home in Suginami City,Suginami Ku,35.70248,139.64959,199825323,Miduki,Private room,4714,3,4,2.18,28,5.0,1.0,1.0,1.0
 34630101,Rental unit in Taito City,Taito Ku,35.71065,139.79171,241758301,梓翰,Entire home/apt,55000,1,76,1.52,165,4.87,4.0,10.0,1.0
 34756882,Rental unit in Shinjuku City,Shinjuku Ku,35.69254,139.70786,63598456,Spring,Entire home/apt,38000,1,109,2.24,103,4.39,2.0,6.0,1.0
-34760627,Rental unit in Shinjuku City,Shinjuku Ku,35.69156646728516,139.7235565185547,115432704,ｼﾞｬﾝ,Entire home/apt,30086,1,58,1.18,35,4.74,1.0,6.0,1.0
+34760627,Rental unit in Shinjuku City,Shinjuku Ku,35.691566467285156,139.7235565185547,115432704,ｼﾞｬﾝ,Entire home/apt,30086,1,58,1.18,35,4.74,1.0,6.0,1.0
 34630102,ryokan in Sumida City,Sumida Ku,35.70027,139.80617,258896821,SaKURa,Shared room,2514,1,31,0.63,67,4.81,1.0,2.0,1.0
 34634721,Hostel in Sumida City,Sumida Ku,35.70073,139.79775,260536243,Hiroyuki,Shared room,7200,1,4,0.36,213,3.0,1.0,2.0,2.0
 34635607,Hostel in Sumida City,Sumida Ku,35.69946,139.79928,260536243,Hiroyuki,Shared room,4700,1,10,0.23,245,4.6,1.0,1.0,2.0
@@ -3568,8 +3568,8 @@ id,name,neighbourhood,latitude,longitude,host_id,host_name,room_type,price,minim
 42734699,Rental unit in Katsushika City,Katsushika Ku,35.74897,139.8701,37456117,Haru,Entire home/apt,5229,1,10,0.26,35,4.5,1.0,2.0,1.0
 42592109,Hotel in Shinjuku City,Shinjuku Ku,35.70167,139.70516,338484415,Airi,Private room,9062,1,4,0.22,364,5.0,1.0,2.0,1.0
 42735063,Rental unit in Katsushika City,Katsushika Ku,35.74924,139.87018,37456117,Haru,Entire home/apt,5800,1,9,0.23,73,4.78,1.0,1.0,1.0
-42592177,Boutique hotel in Shinjuku City,Shinjuku Ku,35.70050430297852,139.70616149902344,338167602,Airi,Private room,9062,1,3,0.1,356,4.67,1.0,1.0,1.0
-42592281,Boutique hotel in Shinjuku City,Shinjuku Ku,35.70050430297852,139.70616149902344,338891783,Airi,Private room,15035,1,7,0.25,170,4.57,1.0,3.0,1.0
+42592177,Boutique hotel in Shinjuku City,Shinjuku Ku,35.700504302978516,139.70616149902344,338167602,Airi,Private room,9062,1,3,0.1,356,4.67,1.0,1.0,1.0
+42592281,Boutique hotel in Shinjuku City,Shinjuku Ku,35.700504302978516,139.70616149902344,338891783,Airi,Private room,15035,1,7,0.25,170,4.57,1.0,3.0,1.0
 42747073,Rental unit in Shibuya-Ku,Shibuya Ku,35.65191,139.70593,74944276,Miwa,Entire home/apt,115330,2,41,1.22,301,4.83,2.0,7.0,1.0
 42747585,Hotel in 東京都中央区,Chuo Ku,35.68428,139.79024,340303379,Hamacho,Private room,28254,1,6,0.87,144,5.0,1.0,1.0,1.0
 42594208,Home in Koto-ku,Koto Ku,35.68762,139.83148,338285304,Haruki,Private room,9466,2,95,2.58,21,4.92,1.0,2.0,3.0
@@ -3710,7 +3710,7 @@ id,name,neighbourhood,latitude,longitude,host_id,host_name,room_type,price,minim
 43320956,Boutique hotel in Ota City,Ota Ku,35.56641387939453,139.71348571777344,343326369,Minn,Private room,20886,1,97,2.55,52,4.68,1.0,1.0,1.0
 43233685,Rental unit in Shinjuku-ku,Shinjuku Ku,35.69199,139.70803,344270090,Syotaro,Entire home/apt,21143,2,46,1.23,62,4.65,1.0,2.0,1.0
 43321030,Boutique hotel in Ota City,Ota Ku,35.56641387939453,139.71348571777344,343326369,Minn,Private room,29457,1,59,1.54,67,4.63,1.0,2.0,1.0
-43321098,Boutique hotel in  Ota Ku,Ota Ku,35.56558990478516,139.7135009765625,343326369,Minn,Private room,30314,1,34,0.95,33,4.85,1.0,2.0,1.0
+43321098,Boutique hotel in  Ota Ku,Ota Ku,35.565589904785156,139.7135009765625,343326369,Minn,Private room,30314,1,34,0.95,33,4.85,1.0,2.0,1.0
 43445676,Rental unit in Shinjuku-ku,Shinjuku Ku,35.71563,139.69754,240341856,The Breathing Hotel Tokyo,Entire home/apt,23873,2,7,0.42,346,4.71,1.0,2.0,1.0
 43321169,Boutique hotel in Ota City,Ota Ku,35.56641387939453,139.71348571777344,343326369,Minn,Private room,43171,1,69,1.9,42,4.87,1.0,6.0,1.0
 43445766,Rental unit in Shinjuku-ku,Shinjuku Ku,35.7139,139.69912,240341856,The Breathing Hotel Tokyo,Entire home/apt,23873,2,11,0.3,350,4.64,1.0,1.0,1.0
@@ -4315,7 +4315,7 @@ id,name,neighbourhood,latitude,longitude,host_id,host_name,room_type,price,minim
 45979684,Rental unit in Taito City,Chiyoda Ku,35.70503,139.77195,287720765,Naoki,Entire home/apt,17286,1,42,1.3,154,4.4,1.0,3.0,1.0
 45981683,Rental unit in Shibuya City,Shibuya Ku,35.68623,139.68224,43855091,Rumika,Entire home/apt,7214,4,17,0.6,24,5.0,1.0,2.0,1.0
 46268703,Rental unit in Shinjuku City,Shinjuku Ku,35.70145,139.70603,256531617,Amazing,Entire home/apt,11000,2,38,1.21,93,4.39,1.0,3.0,1.0
-46493754,Serviced apartment in Taito City,Taito Ku,35.69719029351256,139.78466657961764,376063923,MONday Apart Premium 秋葉原浅草橋ｽﾃｰｼｮﾝ,Entire home/apt,48714,1,14,0.46,281,5.0,1.0,3.0,1.0
+46493754,Serviced apartment in Taito City,Taito Ku,35.697190293512556,139.78466657961764,376063923,MONday Apart Premium 秋葉原浅草橋ｽﾃｰｼｮﾝ,Entire home/apt,48714,1,14,0.46,281,5.0,1.0,3.0,1.0
 46269400,Home in Taito City,Taito Ku,35.72778,139.79642,374628808,Kenji,Entire home/apt,50000,3,24,1.22,145,4.92,3.0,10.0,1.0
 46318718,Rental unit in Chuo City,Chuo Ku,35.6739,139.78206,325732862,Nestay,Entire home/apt,12600,1,7,0.9,81,4.57,1.0,1.0,1.0
 46318762,Home in Shinjuku City,Shinjuku Ku,35.70128,139.70209,183877565,UI Home Company,Entire home/apt,67500,1,36,1.19,94,4.36,2.0,5.0,1.0
@@ -4496,7 +4496,7 @@ id,name,neighbourhood,latitude,longitude,host_id,host_name,room_type,price,minim
 48232877,Serviced apartment in Sumida City,Sumida Ku,35.70709,139.80662,380517627,Asakusa East,Entire home/apt,22671,1,8,0.44,156,5.0,1.0,2.0,1.0
 47987034,Rental unit in Shibuya City,Shibuya Ku,35.64685,139.72132,230127032,Ruka,Entire home/apt,8245,2,27,0.97,306,4.78,1.0,1.0,1.0
 48233469,Hotel in Katsushika City,Katsushika Ku,35.743738566947194,139.85532885082597,389034152,善穂,Private room,11657,1,3,0.87,140,5.0,1.0,3.0,1.0
-48233936,Hotel in Katsushika City,Katsushika Ku,35.74259646793492,139.85654883732462,389034152,善穂,Private room,10213,1,4,0.32,157,4.75,1.0,2.0,1.0
+48233936,Hotel in Katsushika City,Katsushika Ku,35.742596467934916,139.85654883732462,389034152,善穂,Private room,10213,1,4,0.32,157,4.75,1.0,2.0,1.0
 48234307,Hotel in Katsushika City,Katsushika Ku,35.743103134549344,139.8560115190626,389034152,善穂,Private room,13914,1,3,0.13,131,5.0,1.0,4.0,1.0
 48234792,Hotel in Katsushika City,Katsushika Ku,35.74377157564632,139.85533600500546,389034152,善穂,Private room,19140,1,13,0.5,154,4.92,1.0,2.0,1.0
 48018274,Home in Shinjuku City,Shinjuku Ku,35.68932,139.68748,342971176,Yume,Entire home/apt,20657,1,54,1.97,103,4.72,2.0,5.0,2.0
@@ -4665,7 +4665,7 @@ id,name,neighbourhood,latitude,longitude,host_id,host_name,room_type,price,minim
 49886862,Serviced apartment in Shinjuku City,Shinjuku Ku,35.70675,139.72241,400808166,Real,Private room,9254,1,27,1.4,63,4.56,1.0,1.0,1.0
 49886979,Serviced apartment in Shinjuku City,Shinjuku Ku,35.70766,139.72228,400808166,Real,Private room,9569,1,30,1.21,60,4.63,1.0,1.0,1.0
 49887055,Serviced apartment in Shinjuku City,Shinjuku Ku,35.70841,139.72391,400808166,Real,Private room,10281,1,16,0.7,75,4.69,1.0,1.0,1.0
-50234530,Rental unit in Shinjuku City,Shinjuku Ku,35.6997662489506,139.70401407223574,405522757,Akira,Private room,10857,1,32,1.41,257,4.56,1.0,2.0,1.0
+50234530,Rental unit in Shinjuku City,Shinjuku Ku,35.699766248950596,139.70401407223574,405522757,Akira,Private room,10857,1,32,1.41,257,4.56,1.0,2.0,1.0
 50247711,Serviced apartment in Shinjuku City,Shinjuku Ku,35.70667,139.72242,400808166,Real,Private room,9397,1,24,0.97,73,4.71,1.0,1.0,1.0
 49909697,Rental unit in Taito City,Taito Ku,35.720154,139.795914,402335966,ﾌｭｰﾁｬｰﾘｰﾃﾞｨﾝｸﾞ,Entire home/apt,8743,2,16,2.42,155,4.69,1.0,1.0,1.0
 50254943,Rental unit in Taito City,Taito Ku,35.71033,139.7817,321180412,Ostay-Yamato,Entire home/apt,23929,1,23,0.93,212,4.83,1.0,4.0,1.0
@@ -4728,7 +4728,7 @@ id,name,neighbourhood,latitude,longitude,host_id,host_name,room_type,price,minim
 50058894,Aparthotel in Sumida City,Sumida Ku,35.708126,139.799255,403764818,BON Tokyo Asakusa,Entire home/apt,50469,1,98,3.97,302,4.78,1.0,3.0,1.0
 50320684,Condo in Sumida City,Sumida Ku,35.689472190663075,139.80229414499345,372616232,634resort,Entire home/apt,13857,1,24,5.22,196,4.79,1.0,2.0,1.0
 50321042,Condo in Sumida City,Sumida Ku,35.69145,139.80202,372616232,634resort,Entire home/apt,13500,1,11,5.89,229,4.91,1.0,2.0,1.0
-50324247,Condo in Sumida City,Sumida Ku,35.68945019526532,139.80141986793635,372616232,634resort,Entire home/apt,18500,1,14,3.18,337,4.79,1.0,3.0,1.0
+50324247,Condo in Sumida City,Sumida Ku,35.689450195265316,139.80141986793635,372616232,634resort,Entire home/apt,18500,1,14,3.18,337,4.79,1.0,3.0,1.0
 50077889,Serviced apartment in Taito City,Taito Ku,35.720158,139.795914,402335966,ﾌｭｰﾁｬｰﾘｰﾃﾞｨﾝｸﾞ,Entire home/apt,7200,2,12,0.59,119,4.75,1.0,1.0,1.0
 50325642,Condo in Sumida City,Sumida Ku,35.68941263758281,139.80156914148935,372616232,634resort,Entire home/apt,17071,1,20,4.65,330,4.95,1.0,3.0,1.0
 50077893,Serviced apartment in Taito City,Taito Ku,35.720154,139.795914,402335966,ﾌｭｰﾁｬｰﾘｰﾃﾞｨﾝｸﾞ,Entire home/apt,8743,2,13,0.72,156,4.62,1.0,1.0,1.0
@@ -5728,7 +5728,7 @@ id,name,neighbourhood,latitude,longitude,host_id,host_name,room_type,price,minim
 682749762555831993,Villa in Toshima City,Toshima Ku,35.73988,139.74131,352100261,Lions,Entire home/apt,34524,2,14,2.28,135,4.71,3.0,4.0,1.0
 674791405856669260,Rental unit in Shinjuku City,Shinjuku Ku,35.6978586,139.7022262,115432704,ｼﾞｬﾝ,Entire home/apt,25529,1,15,2.24,64,5.0,1.0,4.0,1.0
 682880516201533407,Rental unit in Koto City,Koto Ku,35.69658,139.83598,143096922,Ming,Entire home/apt,7973,2,16,1.5,294,4.75,1.0,1.0,1.0
-674979906513962805,Serviced apartment in Shinjuku City,Shinjuku Ku,35.70797396776052,139.72936503372952,34415001,Cheng,Entire home/apt,18286,2,8,1.0,177,4.75,1.0,2.0,1.0
+674979906513962805,Serviced apartment in Shinjuku City,Shinjuku Ku,35.707973967760516,139.72936503372952,34415001,Cheng,Entire home/apt,18286,2,8,1.0,177,4.75,1.0,2.0,1.0
 682884936266065467,Rental unit in Koto City,Koto Ku,35.69632,139.83518,143096922,Ming,Entire home/apt,7654,2,28,2.55,263,4.86,1.0,1.0,1.0
 682889316888553644,Rental unit in Koto City,Koto Ku,35.6979,139.83726,143096922,Ming,Entire home/apt,7736,2,11,1.02,175,4.64,1.0,1.0,1.0
 682893827159029286,Rental unit in Koto City,Koto Ku,35.69796,139.83557,143096922,Ming,Entire home/apt,6774,2,12,1.11,178,4.83,1.0,1.0,1.0
@@ -5821,7 +5821,7 @@ id,name,neighbourhood,latitude,longitude,host_id,host_name,room_type,price,minim
 703528317920943451,Rental unit in Sumida City,Sumida Ku,35.70045,139.80816,143096922,Ming,Entire home/apt,19241,2,20,2.03,117,4.65,2.0,3.0,1.0
 690924974447427169,Rental unit in Taito City,Taito Ku,35.7147988,139.786836,432278413,Momiji,Entire home/apt,8000,1,13,1.31,46,4.69,1.0,1.0,1.0
 691671958241399822,Serviced apartment in Shinjuku City,Shinjuku Ku,35.7079609,139.7294455,34415001,Cheng,Entire home/apt,32143,2,23,2.32,221,4.91,2.0,2.0,1.0
-691686356857118481,Serviced apartment in Shinjuku City,Shinjuku Ku,35.7079609,139.72939185581967,34415001,Cheng,Entire home/apt,17000,2,3,0.37,220,4.67,1.0,2.0,1.0
+691686356857118481,Serviced apartment in Shinjuku City,Shinjuku Ku,35.707960899999996,139.72939185581967,34415001,Cheng,Entire home/apt,17000,2,3,0.37,220,4.67,1.0,2.0,1.0
 691692959130839862,Serviced apartment in Shinjuku City,Shinjuku Ku,35.70796961184058,139.72938649140164,34415001,Cheng,Entire home/apt,15857,2,19,2.1,146,4.79,1.0,2.0,1.0
 703864267400079014,Home in Shinagawa City,Shinagawa Ku,35.6149,139.73763,42244167,Hiro,Entire home/apt,23571,2,34,3.57,141,4.59,1.0,2.0,1.0
 704204241607665238,Home in Sumida City,Sumida Ku,35.72124,139.8209,214414270,Makoto,Entire home/apt,31063,1,32,3.37,222,4.84,4.0,4.0,3.0
@@ -5895,7 +5895,7 @@ id,name,neighbourhood,latitude,longitude,host_id,host_name,room_type,price,minim
 719017843327030936,Rental unit in Toshima City,Toshima Ku,35.73341,139.73639,321365764,Japan House,Entire home/apt,9491,1,11,1.65,164,4.55,1.0,2.0,1.0
 719020476043854025,Rental unit in Toshima City,Toshima Ku,35.73339,139.73497,321365764,Japan House,Entire home/apt,9491,1,3,1.06,172,4.67,1.0,2.0,1.0
 727814903726681751,Rental unit in Kita City,Kita Ku,35.74698,139.75319,481730406,力,Entire home/apt,12143,1,9,1.78,87,4.44,2.0,2.0,1.0
-719827024531036546,Rental unit in Koto City,Koto Ku,35.68909511390292,139.8379891509262,118924749,未雪,Entire home/apt,16329,2,9,2.7,212,4.78,2.0,3.0,1.0
+719827024531036546,Rental unit in Koto City,Koto Ku,35.689095113902916,139.8379891509262,118924749,未雪,Entire home/apt,16329,2,9,2.7,212,4.78,2.0,3.0,1.0
 727825405303312818,Rental unit in Shinjuku City,Shinjuku Ku,35.70575,139.73059,481729050,Stay Support,Private room,18000,1,6,0.69,7,4.5,1.0,1.0,1.0
 720512016786096981,Boutique hotel in Taito City,Taito Ku,35.7222676,139.789992,255274063,宅東,Private room,29257,2,4,0.55,147,4.75,1.0,4.0,1.0
 728180688674403553,Rental unit in Sumida City,Sumida Ku,35.69838,139.80686,143096922,Ming,Entire home/apt,19234,2,10,1.15,110,4.7,2.0,4.0,1.0
@@ -6055,7 +6055,7 @@ id,name,neighbourhood,latitude,longitude,host_id,host_name,room_type,price,minim
 756929744176441751,Serviced apartment in Taito City,Taito Ku,35.71618,139.80325,486822882,Stayme,Entire home/apt,18664,2,7,1.17,260,4.57,1.0,4.0,1.0
 756931557191588081,Serviced apartment in Taito City,Taito Ku,35.71496869272323,139.80145085299293,486822882,Stayme,Entire home/apt,23327,2,14,2.41,253,4.71,1.0,2.0,1.0
 756752194899522454,Rental unit in Nakano,Nakano Ku,35.70928,139.68714,486133726,Stayme,Entire home/apt,10759,2,13,2.27,249,4.62,1.0,2.0,1.0
-756933141599061440,Serviced apartment in Taito City,Taito Ku,35.7166583703094,139.80214923911242,486822882,Stayme,Entire home/apt,38515,2,15,2.51,259,4.67,1.0,4.0,1.0
+756933141599061440,Serviced apartment in Taito City,Taito Ku,35.716658370309396,139.80214923911242,486822882,Stayme,Entire home/apt,38515,2,15,2.51,259,4.67,1.0,4.0,1.0
 756757187681487950,Rental unit in Nakano,Nakano Ku,35.70747,139.68521,486133726,Stayme,Entire home/apt,7990,2,15,2.12,217,4.93,1.0,2.0,1.0
 756764839709668229,Rental unit in Nakano,Nakano Ku,35.70713,139.68573,486133726,Stayme,Entire home/apt,10759,2,12,1.88,242,4.83,1.0,2.0,1.0
 756949643976645844,Serviced apartment in Taito City,Taito Ku,35.71448,139.80166,486822882,Stayme,Entire home/apt,17514,2,10,1.59,246,4.1,1.0,4.0,1.0
@@ -6222,7 +6222,7 @@ id,name,neighbourhood,latitude,longitude,host_id,host_name,room_type,price,minim
 769404603884261742,Rental unit in Shinjuku City,Shinjuku Ku,35.69966,139.70821,106357494,Ya,Entire home/apt,19686,1,20,2.97,336,4.85,2.0,2.0,2.0
 769785612494826999,Home in Setagaya City,Setagaya Ku,35.66496481302741,139.63090651744386,484739346,由美,Private room,11314,1,9,1.42,241,4.89,1.0,2.0,1.0
 773049264518732219,Serviced apartment in Ota City,Ota Ku,35.5592969,139.720569,46428265,Yoshimasa,Entire home/apt,13571,3,22,3.73,50,4.91,1.0,3.0,1.0
-773049271097256975,Serviced apartment in Ota City,Ota Ku,35.55939714357044,139.72049374133348,46428265,Yoshimasa,Entire home/apt,15571,3,21,3.48,61,5.0,1.0,3.0,1.0
+773049271097256975,Serviced apartment in Ota City,Ota Ku,35.559397143570436,139.72049374133348,46428265,Yoshimasa,Entire home/apt,15571,3,21,3.48,61,5.0,1.0,3.0,1.0
 773049275974673644,Serviced apartment in Ota City,Ota Ku,35.559398507328,139.7204900532961,46428265,Yoshimasa,Entire home/apt,13571,3,18,3.0,37,5.0,1.0,3.0,1.0
 773049674327667304,Serviced apartment in Ota City,Ota Ku,35.5592969,139.720569,46428265,Yoshimasa,Entire home/apt,13571,3,24,3.91,54,4.92,1.0,3.0,1.0
 770154214724153073,Rental unit in Shinjuku City,Shinjuku Ku,35.70059,139.70626,106357494,Ya,Entire home/apt,18229,1,11,1.63,352,4.64,2.0,2.0,2.0
@@ -6265,7 +6265,7 @@ id,name,neighbourhood,latitude,longitude,host_id,host_name,room_type,price,minim
 779995228980623490,Hotel in Taito City,Taito Ku,35.71433,139.78063,486824577,Stayme,Private room,18018,2,15,2.42,250,4.73,1.0,4.0,1.0
 779996035347921469,Hotel in Taito City,Taito Ku,35.71449,139.78039,486824577,Stayme,Private room,19199,2,11,1.76,265,4.64,1.0,4.0,1.0
 776475759871970283,Rental unit in Shibuya City,Shibuya Ku,35.667967130845724,139.7113020544327,4145041,Gen,Entire home/apt,30645,2,21,3.52,269,4.43,1.0,2.0,1.0
-776477020984967376,Rental unit in Shinjuku-ku,Shinjuku Ku,35.70208971628156,139.72313266756328,490421416,Yuuri,Entire home/apt,12029,1,24,3.79,53,4.92,1.0,2.0,1.0
+776477020984967376,Rental unit in Shinjuku-ku,Shinjuku Ku,35.702089716281556,139.72313266756328,490421416,Yuuri,Entire home/apt,12029,1,24,3.79,53,4.92,1.0,2.0,1.0
 776491987593670951,Rental unit in Shinjuku-ku,Shinjuku Ku,35.69980192707828,139.7233979074471,490421416,Yuuri,Entire home/apt,9529,1,24,3.69,34,4.83,1.0,2.0,1.0
 779997538038364597,Hotel in Taito City,Taito Ku,35.71637,139.77918,486824577,Stayme,Private room,19199,2,4,0.67,256,4.5,1.0,4.0,1.0
 780000369340917184,Hotel in Taito City,Taito Ku,35.71637,139.7805,486824577,Stayme,Private room,18018,2,19,3.03,234,4.84,1.0,4.0,1.0
@@ -6367,7 +6367,7 @@ id,name,neighbourhood,latitude,longitude,host_id,host_name,room_type,price,minim
 784391959705150536,Rental unit in Setagaya City,Setagaya Ku,35.66095090177361,139.66832991001274,128187313,Aruko,Entire home/apt,23000,2,14,2.55,216,4.93,1.0,2.0,1.0
 787551653863205913,Rental unit in Shibuya City,Shibuya Ku,35.655987498225954,139.70298316503536,485544006,Emiko,Entire home/apt,39886,2,30,4.97,108,4.93,1.0,4.0,1.0
 787948152112774818,Rental unit in Minato City,Minato Ku,35.642330295236576,139.75659148983698,491718155,Ippei,Entire home/apt,25740,1,15,3.15,108,4.2,2.0,3.0,1.0
-788026625932431576,Rental unit in Shinjuku City,Shinjuku Ku,35.7042259745004,139.69696790846672,231273877,青梅,Entire home/apt,16190,2,16,2.94,160,4.69,1.0,2.0,1.0
+788026625932431576,Rental unit in Shinjuku City,Shinjuku Ku,35.704225974500396,139.69696790846672,231273877,青梅,Entire home/apt,16190,2,16,2.94,160,4.69,1.0,2.0,1.0
 784456926931992322,Rental unit in Shinjuku City,Shinjuku Ku,35.70134660104693,139.69731859537802,294212985,Akemi,Entire home/apt,11429,2,10,3.66,147,4.2,1.0,1.0,1.0
 788071078545546362,Rental unit in Kita City,Kita Ku,35.775845807024055,139.716140380384,154507729,福艷,Entire home/apt,9429,2,19,3.17,173,4.58,1.0,2.0,1.0
 784467971112624784,Hotel in Chuo City,Chuo Ku,35.69121985854218,139.77897395383513,4981880,Meta,Private room,25000,1,31,4.95,309,4.71,2.0,2.0,1.0
@@ -6492,7 +6492,7 @@ id,name,neighbourhood,latitude,longitude,host_id,host_name,room_type,price,minim
 806400688551707150,Villa in Sumida City,Sumida Ku,35.7207681547788,139.83057802720325,311979642,Selina,Entire home/apt,19586,1,14,2.75,311,4.79,2.0,3.0,1.0
 799697077004981050,Rental unit in Toshima City,Toshima Ku,35.733259,139.7070731,35777092,教平,Entire home/apt,26514,1,11,2.52,220,4.45,1.0,4.0,1.0
 806404556305337914,Rental unit in Shinjuku City,Shinjuku Ku,35.70345228789469,139.7080207655581,86339630,Na,Entire home/apt,19371,1,7,1.53,320,4.86,3.0,3.0,2.0
-806418106409975520,Rental unit in Shinjuku City,Shinjuku Ku,35.7021283873402,139.70630915916925,106357494,Ya,Entire home/apt,22943,1,9,2.05,290,5.0,3.0,3.0,2.0
+806418106409975520,Rental unit in Shinjuku City,Shinjuku Ku,35.702128387340196,139.70630915916925,106357494,Ya,Entire home/apt,22943,1,9,2.05,290,5.0,3.0,3.0,2.0
 799842808469610045,Rental unit in Sumida City,Taito Ku,35.709850186687,139.79492125385067,231273877,青梅,Entire home/apt,20000,2,8,1.58,147,4.75,1.0,3.0,2.0
 806432138760821120,Rental unit in Shinjuku City,Shinjuku Ku,35.70166564624647,139.70658942608998,106357494,Ya,Entire home/apt,15857,1,12,2.67,318,4.75,2.0,2.0,2.0
 806445724288056014,Rental unit in Shinjuku City,Shinjuku Ku,35.70315000820022,139.70633432365892,106357494,Ya,Entire home/apt,18800,1,17,3.21,280,4.94,3.0,4.0,2.0
@@ -6526,7 +6526,7 @@ id,name,neighbourhood,latitude,longitude,host_id,host_name,room_type,price,minim
 811868655818752799,Rental unit in Suginami City,Suginami Ku,35.70776214542938,139.6351196490472,230910892,Risa & Kei,Entire home/apt,7871,3,13,3.05,29,4.54,1.0,1.0,1.0
 811878964996021898,Rental unit in Suginami City,Suginami Ku,35.70784,139.63594,230910892,Risa & Kei,Entire home/apt,10686,3,5,1.39,34,4.8,1.0,1.0,1.0
 811941956223548780,Rental unit in Shinjuku City,Shinjuku Ku,35.7135319,139.7089881,497851265,勝哉,Private room,11429,1,13,2.85,167,4.85,1.0,1.0,1.0
-808899187124371893,Rental unit in Shinjuku City,Shinjuku Ku,35.70344625658164,139.707624308876,458348219,Yuji,Entire home/apt,17857,3,9,1.78,158,4.22,2.0,4.0,1.0
+808899187124371893,Rental unit in Shinjuku City,Shinjuku Ku,35.703446256581636,139.707624308876,458348219,Yuji,Entire home/apt,17857,3,9,1.78,158,4.22,2.0,4.0,1.0
 812019853543271463,Guesthouse in Shinjuku City,Shinjuku Ku,35.69219350125205,139.7079591315209,161804725,Kasha,Entire home/apt,8103,1,23,4.86,54,4.74,1.0,1.0,1.0
 809164528985954596,Hotel in Bunkyo City,Bunkyo Ku,35.70718069999999,139.7692614,4981880,Meta,Private room,8679,1,18,3.55,348,4.83,1.0,1.0,1.0
 812038256065829107,Rental unit in Shinjuku City,Shinjuku Ku,35.69186342704612,139.7069123638544,161804725,Kasha,Entire home/apt,9560,1,18,3.88,7,4.5,1.0,1.0,1.0
@@ -6600,7 +6600,7 @@ id,name,neighbourhood,latitude,longitude,host_id,host_name,room_type,price,minim
 816946249529431846,Home in Sumida City,Sumida Ku,35.71887983742792,139.81579394801884,210199913,Satoru,Entire home/apt,25000,4,12,3.56,220,4.83,2.0,5.0,1.0
 822860948786132704,Rental unit in Shinjuku City,Shinjuku Ku,35.69965,139.70495,266670311,Mari,Entire home/apt,13943,1,9,2.76,232,4.89,1.0,2.0,1.0
 817654412699603331,Rental unit in Sumida City,Sumida Ku,35.7056001,139.7975151,497504503,PRISM Inn Komagata Asakusa,Entire home/apt,22343,2,3,0.76,102,3.67,2.0,5.0,1.0
-822879171531760759,Home in Taito City,Taito Ku,35.72061990679752,139.78302788672957,216544005,香菜,Entire home/apt,20371,1,7,1.59,279,4.86,2.0,2.0,1.0
+822879171531760759,Home in Taito City,Taito Ku,35.720619906797516,139.78302788672957,216544005,香菜,Entire home/apt,20371,1,7,1.59,279,4.86,2.0,2.0,1.0
 817683100488870685,Rental unit in Sumida City,Sumida Ku,35.7056001,139.7975151,497504503,PRISM Inn Komagata Asakusa,Entire home/apt,23143,2,6,2.4,139,4.83,2.0,5.0,1.0
 822932806526494736,Rental unit in Nakano City,Nakano Ku,35.71022431133787,139.66876343984882,493288566,Haruko,Entire home/apt,8857,2,11,2.92,167,4.55,1.0,2.0,1.0
 822942728588309688,Home in Edogawa City,Edogawa Ku,35.7412819,139.884585,234477095,Kasumi,Entire home/apt,10703,2,4,1.32,112,5.0,1.0,2.0,1.0
@@ -6615,7 +6615,7 @@ id,name,neighbourhood,latitude,longitude,host_id,host_name,room_type,price,minim
 818487696292105536,Hotel in Taito City,Taito Ku,35.71275363760247,139.7835536209264,106084840,Izumi,Private room,17857,1,5,1.38,117,4.8,1.0,4.0,1.0
 823623746624154386,Rental unit in Shinjuku City,Shinjuku Ku,35.71112997521964,139.7222175120697,463143698,Stayme,Entire home/apt,7116,2,9,2.97,222,4.67,1.0,2.0,1.0
 823638972492896134,Home in Sumida City,Sumida Ku,35.708707764798845,139.80627047429263,29700750,汪,Entire home/apt,30235,1,21,6.49,18,4.9,3.0,4.0,1.0
-818708250461469883,Rental unit in Shinjuku City,Shinjuku Ku,35.70330768465988,139.69013299297282,230910892,Risa & Kei,Entire home/apt,15000,3,8,2.07,31,4.38,2.0,2.0,1.0
+818708250461469883,Rental unit in Shinjuku City,Shinjuku Ku,35.703307684659876,139.69013299297282,230910892,Risa & Kei,Entire home/apt,15000,3,8,2.07,31,4.38,2.0,2.0,1.0
 819457867197135004,Rental unit in Shinjuku City,Shinjuku Ku,35.6996251,139.707113,348068631,並木,Entire home/apt,21657,1,15,3.41,299,4.53,1.0,2.0,1.0
 819497755865482953,Rental unit in Katsushika City,Katsushika Ku,35.7492375,139.8583762,129096261,Chisaki,Entire home/apt,14541,2,7,1.81,303,4.86,1.0,2.0,1.0
 819833869252582711,Rental unit in Shinjuku City,Shinjuku Ku,35.70383423274912,139.69099710304306,230910892,Risa & Kei,Entire home/apt,8443,3,4,1.67,36,5.0,1.0,1.0,1.0
@@ -6632,7 +6632,7 @@ id,name,neighbourhood,latitude,longitude,host_id,host_name,room_type,price,minim
 824517353554365726,Hotel in Itabashi City,Itabashi Ku,35.7472599,139.7132272,97903375,Max,Private room,7893,2,5,2.73,123,5.0,1.0,3.0,1.0
 824519968103074393,Aparthotel in Itabashi City,Itabashi Ku,35.7472599,139.7132272,97903375,Max,Private room,6879,2,4,2.14,152,4.75,1.0,2.0,1.0
 826541404639026389,Rental unit in Shinjuku City,Shinjuku Ku,35.7118786194561,139.69211191733635,501017712,Makoto,Entire home/apt,61429,2,13,3.58,164,5.0,2.0,7.0,1.0
-826564398060225851,Rental unit in Shinjuku City,Toshima Ku,35.71447648544736,139.7083497009508,127629758,Taku,Entire home/apt,12000,3,7,1.69,157,4.71,1.0,1.0,1.0
+826564398060225851,Rental unit in Shinjuku City,Toshima Ku,35.714476485447356,139.7083497009508,127629758,Taku,Entire home/apt,12000,3,7,1.69,157,4.71,1.0,1.0,1.0
 826665402529418038,Rental unit in Shibuya City,Shibuya Ku,35.678795315591444,139.6808247091063,9018856,Vivian,Entire home/apt,84348,3,6,2.95,51,4.67,3.0,10.0,3.0
 827025997635572426,Rental unit in Shinjuku City,Shinjuku Ku,35.69622697833382,139.70537654775387,402997945,Maddie,Entire home/apt,17143,1,4,0.92,27,4.75,1.0,2.0,1.0
 824566782440725977,Rental unit in Bunkyo City,Bunkyo Ku,35.70619881392296,139.76793438177856,371483625,Best Faith,Entire home/apt,7086,2,15,3.95,86,4.53,1.0,1.0,1.0
@@ -6728,7 +6728,7 @@ id,name,neighbourhood,latitude,longitude,host_id,host_name,room_type,price,minim
 837850470416823072,Rental unit in Nakano City,Nakano Ku,35.6874585,139.6760434,210898329,Nagasaki,Entire home/apt,10286,3,8,2.93,138,4.88,1.0,2.0,1.0
 834435698041651873,Rental unit in Shinjuku City,Shinjuku Ku,35.700957791764765,139.70268670731235,502695034,Yuika And Yosuke,Entire home/apt,20143,2,7,2.21,123,4.0,1.0,3.0,1.0
 835102922430288558,Rental unit in Taito City,Taito Ku,35.724091078188984,139.77734813907924,353148197,九風,Entire home/apt,16571,1,11,4.65,169,4.64,1.0,2.0,1.0
-835181301658675207,Rental unit in Toshima City,Toshima Ku,35.7331226242686,139.7068355900346,94743304,松,Entire home/apt,29999,1,6,1.75,111,4.17,1.0,4.0,1.0
+835181301658675207,Rental unit in Toshima City,Toshima Ku,35.733122624268596,139.7068355900346,94743304,松,Entire home/apt,29999,1,6,1.75,111,4.17,1.0,4.0,1.0
 838625269072784969,Rental unit in Minato City,Minato Ku,35.6463828,139.7301495,95642570,Yui,Entire home/apt,14700,2,6,1.76,180,4.83,1.0,2.0,1.0
 835228167881922604,Rental unit in Shibuya City,Shibuya Ku,35.64525801688432,139.7150656493259,486337034,Yuri,Entire home/apt,15550,3,7,2.16,196,5.0,1.0,2.0,1.0
 840821924502829630,Home in Nerima City,Nerima Ku,35.767161,139.6618401,475993865,Yuchan,Private room,7966,5,5,2.21,165,5.0,1.0,2.0,1.0
@@ -6808,7 +6808,7 @@ id,name,neighbourhood,latitude,longitude,host_id,host_name,room_type,price,minim
 844088664256408358,Rental unit in Shinjuku City,Shinjuku Ku,35.6956094,139.6908782,504729817,Nana,Entire home/apt,20214,2,3,0.88,78,5.0,1.0,1.0,1.0
 847653427818910486,Rental unit in Toshima City,Toshima Ku,35.73236864885552,139.7166185930704,123383939,博,Entire home/apt,14000,1,7,2.04,44,5.0,1.0,2.0,1.0
 844339372738894911,Rental unit in Nakano City,Nakano Ku,35.711346,139.6693549,504799968,勝哉,Private room,18571,1,26,7.5,157,4.96,1.0,4.0,1.0
-847683786784272384,Home in Suginami City,Suginami Ku,35.66885923612232,139.62947189396493,59551877,Harvey & Lei,Entire home/apt,66429,3,18,5.63,256,5.0,3.0,6.0,2.0
+847683786784272384,Home in Suginami City,Suginami Ku,35.668859236122316,139.62947189396493,59551877,Harvey & Lei,Entire home/apt,66429,3,18,5.63,256,5.0,3.0,6.0,2.0
 844590796768863950,Home in Sumida City,Sumida Ku,35.71244734961255,139.82132919908997,321365764,Japan House,Entire home/apt,37714,2,8,2.33,115,4.88,3.0,6.0,1.0
 848048428202584735,Condo in Toshima City,Toshima Ku,35.7224662539825,139.72193559983478,210081038,Kota,Entire home/apt,15000,2,10,3.09,24,5.0,2.0,4.0,1.0
 844806735928012279,Home in Shinjuku City,Shinjuku Ku,35.70115313729736,139.6979483029346,504872904,龍太,Entire home/apt,35000,2,7,2.21,317,4.86,4.0,5.0,1.0
@@ -6886,7 +6886,7 @@ id,name,neighbourhood,latitude,longitude,host_id,host_name,room_type,price,minim
 857502946834488025,Rental unit in Shinjuku City,Shinjuku Ku,35.7072199,139.6914868,31734605,琢居,Entire home/apt,25729,1,3,1.91,50,3.67,2.0,4.0,1.0
 857513949148777846,Rental unit in Shinjuku City,Shinjuku Ku,35.7072199,139.6914868,31734605,琢居,Entire home/apt,24971,1,4,2.67,28,5.0,2.0,4.0,1.0
 857513973559508874,Rental unit in Shinjuku City,Shinjuku Ku,35.7072199,139.6914868,31734605,琢居,Entire home/apt,25729,1,9,3.55,34,4.78,2.0,4.0,1.0
-854057090536230337,Rental unit in Shinjuku City,Shinjuku Ku,35.70068292727488,139.6905660931199,330315690,An,Entire home/apt,8857,2,9,3.75,6,4.22,1.0,2.0,1.0
+854057090536230337,Rental unit in Shinjuku City,Shinjuku Ku,35.700682927274876,139.6905660931199,330315690,An,Entire home/apt,8857,2,9,3.75,6,4.22,1.0,2.0,1.0
 857591425329647809,Condo in Sumida City,Sumida Ku,35.715617,139.8074128,112037524,Kousin,Entire home/apt,51143,1,5,2.17,52,4.4,8.0,12.0,3.0
 854127519596868750,Home in Setagaya-Ku Ohara,Setagaya Ku,35.67033555547836,139.65935036659965,501740249,Unito,Private room,17429,1,5,1.83,123,4.6,1.0,1.0,1.0
 854832974645131390,Home in Nakano City,Nakano Ku,35.721820406214775,139.64774452149868,131558880,Yawen,Private room,7714,1,13,4.43,74,5.0,1.0,2.0,1.0
@@ -6909,7 +6909,7 @@ id,name,neighbourhood,latitude,longitude,host_id,host_name,room_type,price,minim
 856046926937570036,Rental unit in Sumida City,Sumida Ku,35.70916429692875,139.80811854819356,507235651,Lafesta,Entire home/apt,9350,2,8,4.21,270,4.5,1.0,2.0,1.0
 858975933794913874,Rental unit in Bunkyo-ku,Bunkyo Ku,35.70623183057572,139.74467540294515,507235651,Lafesta,Entire home/apt,20072,2,5,2.63,246,4.4,2.0,3.0,1.0
 859095013910037913,Rental unit in Taito City,Taito Ku,35.713535264309456,139.79120835636192,494895071,Ferjhon,Entire home/apt,13832,1,3,1.64,174,5.0,1.0,1.0,1.0
-859152915212924486,Rental unit in Taito City,Taito Ku,35.71491140832244,139.79111577177238,494895071,Ferjhon,Entire home/apt,16550,1,4,2.14,147,5.0,1.0,2.0,1.0
+859152915212924486,Rental unit in Taito City,Taito Ku,35.714911408322436,139.79111577177238,494895071,Ferjhon,Entire home/apt,16550,1,4,2.14,147,5.0,1.0,2.0,1.0
 859288182461536473,Hotel in Taito City,Taito Ku,35.70120117156391,139.77774302319008,507911103,Xiaopeng,Private room,9914,1,3,1.67,311,4.67,1.0,1.0,1.0
 859411279529012940,Rental unit in Shinjuku City,Shinjuku Ku,35.70450980171185,139.69319015537914,375835382,Kuma,Entire home/apt,8286,2,12,4.44,22,4.5,1.0,1.0,1.0
 859427900799929863,Rental unit in Shinjuku City,Shinjuku Ku,35.70497364276247,139.6917203354258,376943876,Bara,Entire home/apt,10000,2,9,3.25,48,4.89,1.0,2.0,1.0
@@ -6934,7 +6934,7 @@ id,name,neighbourhood,latitude,longitude,host_id,host_name,room_type,price,minim
 861960231496731524,Rental unit in Sumida City,Sumida Ku,35.70890916729488,139.80699379716927,132259403,KASHA Tokyo,Entire home/apt,18143,1,5,2.21,284,4.8,2.0,1.0,1.0
 861964648535700970,Rental unit in Sumida City,Sumida Ku,35.7080789,139.8061648,132259403,KASHA Tokyo,Entire home/apt,10000,1,3,1.53,320,5.0,1.0,1.0,1.0
 862056521829603958,Rental unit in Ota City,Ota Ku,35.550798466875015,139.73942921605516,68203351,Hideaki,Entire home/apt,8286,2,6,2.69,151,4.33,1.0,3.0,1.0
-860370104222744997,Rental unit in Sumida City,Sumida Ku,35.71782425169312,139.81133755377763,504404229,蘭,Private room,5500,2,7,3.0,49,4.43,1.0,1.0,1.0
+860370104222744997,Rental unit in Sumida City,Sumida Ku,35.717824251693116,139.81133755377763,504404229,蘭,Private room,5500,2,7,3.0,49,4.43,1.0,1.0,1.0
 862226269678370385,Rental unit in Shinjuku City,Shinjuku Ku,35.697681695166935,139.7175942733884,192788743,Kasumi,Entire home/apt,23257,1,5,1.85,339,4.6,1.0,4.0,1.0
 860380536082644501,Rental unit in Toshima City,Toshima Ku,35.73071,139.73264,387729784,Phoenix,Private room,10857,1,7,3.09,235,4.71,1.0,1.0,1.0
 860402053718482525,Rental unit in Shinjuku City,Shinjuku Ku,35.69963092218294,139.69768215022705,445810505,Tora,Entire home/apt,7714,2,7,2.53,63,4.43,1.0,2.0,1.0
@@ -6942,7 +6942,7 @@ id,name,neighbourhood,latitude,longitude,host_id,host_name,room_type,price,minim
 861192687269539802,Rental unit in Nakano City,Nakano Ku,35.6908233958281,139.67777259699855,502308957,Juri,Entire home/apt,18000,2,6,2.69,260,4.67,1.0,3.0,1.0
 862685720483294414,Rental unit in Itabashi City,Itabashi Ku,35.7754954,139.6344898,130378164,Masaru,Entire home/apt,8657,1,4,2.11,363,4.75,1.0,2.0,1.0
 861281347821791049,Condo in Koto City,Koto Ku,35.67191,139.79989,493582747,Monica,Entire home/apt,8000,2,5,5.0,84,4.8,1.0,1.0,1.0
-861284907080454953,Rental unit in Sumida City,Sumida Ku,35.71611332035376,139.8103161509444,219770746,Pirane HOUSE,Entire home/apt,20000,2,7,2.73,105,3.86,2.0,3.0,1.0
+861284907080454953,Rental unit in Sumida City,Sumida Ku,35.716113320353756,139.8103161509444,219770746,Pirane HOUSE,Entire home/apt,20000,2,7,2.73,105,3.86,2.0,3.0,1.0
 861329519362296594,Rental unit in Toshima City,Toshima Ku,35.73253866368271,139.68049628336595,507585442,Taiga,Entire home/apt,14357,2,4,2.93,230,5.0,1.0,2.0,1.0
 861332119658147091,Rental unit in Sumida City,Sumida Ku,35.7080789,139.8061648,132259403,KASHA Tokyo,Entire home/apt,29286,1,8,3.38,215,5.0,3.0,1.0,1.0
 862767769380478128,Home in Sumida City,Sumida Ku,35.725306045332296,139.8159080101702,508639871,Reach,Entire home/apt,18571,3,6,2.65,72,4.83,2.0,3.0,1.0
@@ -7014,7 +7014,7 @@ id,name,neighbourhood,latitude,longitude,host_id,host_name,room_type,price,minim
 871583834595029650,Home in Setagaya City,Setagaya Ku,35.649018,139.683969,466912866,Riho,Entire home/apt,54244,3,6,2.95,338,5.0,4.0,9.0,1.0
 869198380521373649,Home in Shinjuku City,Shinjuku Ku,35.71390299999999,139.6844174,34622264,Tanuki,Entire home/apt,56071,2,3,1.53,308,5.0,4.0,7.0,2.0
 869228039390644564,Rental unit in Katsushika City,Katsushika Ku,35.739602469772926,139.8475059350725,168505907,Shotaro,Entire home/apt,9000,2,5,2.21,69,4.4,1.0,3.0,1.0
-871608767877253804,Rental unit in Shinjuku City,Shinjuku Ku,35.69703189013276,139.69421205168894,490547316,Yingjie,Entire home/apt,12119,4,6,2.81,99,5.0,1.0,2.0,1.0
+871608767877253804,Rental unit in Shinjuku City,Shinjuku Ku,35.697031890132756,139.69421205168894,490547316,Yingjie,Entire home/apt,12119,4,6,2.81,99,5.0,1.0,2.0,1.0
 869249017428433995,Rental unit in Taito City,Taito Ku,35.71827541006295,139.80088951778072,244662388,博雅,Entire home/apt,16029,1,3,1.3,86,4.67,1.0,3.0,1.0
 869249097871165685,Rental unit in Suginami City,Suginami Ku,35.70749547144912,139.6099117513476,244662388,博雅,Entire home/apt,13887,1,8,3.43,94,4.25,1.0,3.0,1.0
 871637532708108569,Rental unit in Shinjuku City,Shinjuku Ku,35.6964936,139.7066343,130691030,Wison,Entire home/apt,24551,1,4,4.0,215,4.5,2.0,2.0,1.0
@@ -7022,7 +7022,7 @@ id,name,neighbourhood,latitude,longitude,host_id,host_name,room_type,price,minim
 869726805255903280,Rental unit in Shinjuku City,Shinjuku Ku,35.714306352579385,139.6985802797587,244663327,Urban Villa 津谷邸,Entire home/apt,19800,1,4,2.07,299,4.5,2.0,4.0,1.0
 869968920757044995,Rental unit in Shinjuku City,Shinjuku Ku,35.70006277414385,139.69732010760265,300929484,Mizuki,Entire home/apt,19571,5,6,3.53,85,5.0,2.0,3.0,1.0
 870132862843034639,Rental unit in Shinjuku City,Shinjuku Ku,35.6993192818582,139.69066018935968,506424409,Masato,Entire home/apt,9811,1,10,5.26,216,4.9,1.0,2.0,1.0
-872031944634634221,Rental unit in Kita City,Kita Ku,35.7382399158688,139.7643934590113,356490069,Seanestlehotel,Entire home/apt,31221,1,4,2.55,101,5.0,3.0,8.0,2.0
+872031944634634221,Rental unit in Kita City,Kita Ku,35.738239915868796,139.7643934590113,356490069,Seanestlehotel,Entire home/apt,31221,1,4,2.55,101,5.0,3.0,8.0,2.0
 870243774522025578,Home in Adachi City,Adachi Ku,35.76994699999999,139.7644992,232706677,Sit In Silence,Private room,7000,1,4,1.76,169,4.75,1.0,1.0,1.0
 870553043937913186,Rental unit in Shibuya City,Shibuya Ku,35.659888535193254,139.693754868958,198552582,Masa,Entire home/apt,7514,3,5,2.78,5,4.2,1.0,1.0,1.0
 872116822774826571,Rental unit in Shinjuku City,Shinjuku Ku,35.70322448634392,139.70669819905447,112031940,Trip,Private room,7535,1,3,1.61,274,2.67,1.0,2.0,1.0
@@ -7038,7 +7038,7 @@ id,name,neighbourhood,latitude,longitude,host_id,host_name,room_type,price,minim
 873682304997483141,Rental unit in Nakano City,Nakano Ku,35.6918224,139.6788744,321365764,Japan House,Entire home/apt,8740,2,6,3.16,24,5.0,1.0,2.0,1.0
 873754215025870460,Cottage in Komae,Komae Shi,35.628929,139.5884862,128164454,Kaz,Entire home/apt,6000,3,3,2.65,250,4.67,1.0,3.0,1.0
 873788365774132352,Rental unit in Shibuya City,Shibuya Ku,35.65922880000001,139.6960633,53784200,Gaku,Entire home/apt,20143,2,4,1.85,235,4.75,1.0,2.0,1.0
-872705568173319685,Home in Setagaya City,Setagaya Ku,35.64672215841048,139.667339579922,508910632,Anton,Entire home/apt,64000,3,6,2.77,289,5.0,3.0,5.0,1.0
+872705568173319685,Home in Setagaya City,Setagaya Ku,35.646722158410476,139.667339579922,508910632,Anton,Entire home/apt,64000,3,6,2.77,289,5.0,3.0,5.0,1.0
 872901358334170518,Rental unit in Sumida City,Sumida Ku,35.68993832772954,139.8089713355555,38092840,Sayaka  &    Riku,Entire home/apt,19143,3,4,2.5,56,3.5,2.0,3.0,1.0
 873053621115807322,Rental unit in Nakano City,Nakano Ku,35.701295679183204,139.66204821963947,510610560,Kokoro,Entire home/apt,10114,3,9,4.66,105,4.89,1.0,1.0,1.0
 874152549322471054,Rental unit in Setagaya City,Setagaya Ku,35.66247033304856,139.6687367090175,511021492,寛啓,Entire home/apt,6971,2,8,4.21,73,4.75,1.0,2.0,1.0
@@ -7137,7 +7137,7 @@ id,name,neighbourhood,latitude,longitude,host_id,host_name,room_type,price,minim
 887961120378837633,Home in Sumida City,Sumida Ku,35.71652189633312,139.81411758810282,339762918,Hata,Entire home/apt,38000,2,3,3.0,164,5.0,3.0,6.0,2.0
 887994855151314861,Rental unit in Taito City,Taito Ku,35.7100298,139.7856076,506674744,Shin&Dad,Private room,8000,1,27,25.31,335,4.89,1.0,2.0,2.0
 886611511356245583,Rental unit in Minato City,Minato Ku,35.6567386,139.7439772,9018856,Vivian,Entire home/apt,44434,3,4,3.75,159,5.0,1.0,3.0,1.0
-886620294258323387,Rental unit in Minato City,Minato Ku,35.65582381281168,139.74299344277446,9018856,Vivian,Entire home/apt,44434,3,3,3.0,141,5.0,1.0,3.0,1.0
+886620294258323387,Rental unit in Minato City,Minato Ku,35.655823812811676,139.74299344277446,9018856,Vivian,Entire home/apt,44434,3,3,3.0,141,5.0,1.0,3.0,1.0
 888125808877222123,Rental unit in Shinjuku City,Shinjuku Ku,35.69661363931931,139.70574439243336,30451776,Emily,Entire home/apt,9571,1,5,5.0,277,5.0,1.0,2.0,1.0
 891766884346907462,Rental unit in Minato City,Minato Ku,35.64630090650467,139.75367865088856,333324348,M,Entire home/apt,9300,1,3,3.0,18,4.0,1.0,1.0,1.0
 891785549596717985,Rental unit in Minato City,Minato Ku,35.647831068196375,139.7550991058221,333324348,M,Entire home/apt,15714,1,4,2.93,36,4.25,2.0,2.0,1.0
@@ -7156,7 +7156,7 @@ id,name,neighbourhood,latitude,longitude,host_id,host_name,room_type,price,minim
 892676448562505998,Rental unit in Minato City,Minato Ku,35.6713136,139.7400551,504060604,宜旻,Entire home/apt,18686,3,3,3.0,63,5.0,1.0,3.0,1.0
 892978796654423227,Rental unit in Toshima City,Toshima Ku,35.73394,139.72634,211795510,Kei,Entire home/apt,12000,2,3,2.81,68,4.33,1.0,2.0,1.0
 890104755163370262,Home in Suginami-ku,Suginami Ku,35.677218584151575,139.6626700645569,183877565,UI Home Company,Entire home/apt,31500,1,4,4.0,107,4.5,2.0,3.0,1.0
-893084161817125686,Rental unit in Ota City,Ota Ku,35.56374940227536,139.7076010423799,40238920,Shigeru,Entire home/apt,10286,3,9,9.0,166,5.0,1.0,2.0,1.0
+893084161817125686,Rental unit in Ota City,Ota Ku,35.563749402275356,139.7076010423799,40238920,Shigeru,Entire home/apt,10286,3,9,9.0,166,5.0,1.0,2.0,1.0
 893104158696822547,Rental unit in Sumida City,Sumida Ku,35.69518,139.79418,351115054,Sia,Entire home/apt,7757,2,4,3.24,51,4.75,1.0,2.0,1.0
 890799571185406937,Home in Katsushika Ward,Katsushika Ku,35.7385,139.85231,506807420,Akane,Entire home/apt,33343,2,3,2.73,237,4.33,5.0,6.0,1.0
 890865243370920214,Rental unit in Koto City,Koto Ku,35.686702,139.8131077,37187799,Ming,Entire home/apt,40429,2,5,3.95,270,5.0,3.0,2.0,1.0
