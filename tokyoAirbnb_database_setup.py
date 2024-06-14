@@ -135,16 +135,13 @@ def welcome():
                 <h2>Visualization Routes</h2>
                 <ul>
                     <li>/api/v1.0/Listings-By-Neighborhood</li>
+                    <li>/api/v1.0/Prices</li>
                 </ul>
             </div>
         </div>
     </body>
     </html>
     """)
-
-@app.route("/api/v1.0/test")
-def test():
-    return('<img src="https://t4.ftcdn.net/jpg/02/88/09/57/360_F_288095746_6s6fqCdkYCvXbC4ebCRYtU1F99Uv57S2.jpg">')
 
 @app.route("/api/v1.0/Listings-By-Neighborhood")
 def neighbourhoods():
@@ -156,18 +153,63 @@ def neighbourhoods():
     html_content = f"""
     <!DOCTYPE html>
     <html lang="en">
+    <style>
+        body {{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }}
+        h1 {{
+            text-align: center;
+            color: black;
+        }}
+    </style>
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Number of Listings by Neighborhood in Tokyo</title>
+        <title>Number of Listings by Neighborhood in Tokyo, Japan</title>
     </head>
     <body>
-        <h1>Number of Listings by Neighborhood in Tokyo</h1>
-        <img src="data:image/png;base64,{image_base64}" alt="Number of Listings by Neighborhood in Tokyo">
+        <h1>Number of Listings by Neighborhood in Tokyo, Japan</h1>
+        <img src="data:image/png;base64,{image_base64}" alt="Number of Listings by Neighborhood in Tokyo, Japan">
     </body>
     </html>
     """
     return render_template_string(html_content)
+
+@app.route("/api/v1.0/Prices")
+def prices():
+    with open('Resources/histogram_of_prices_in_tokyo.png', 'rb') as image_file:
+        image_base64 = base64.b64encode(image_file.read()).decode('utf-8')
+
+    # Create an HTML string with the base64 image embedded
+    html_content = f"""
+    <!DOCTYPE html>
+    <html lang="en">
+    <style>
+        body {{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }}
+        h1 {{
+            text-align: center;
+            color: black;
+        }}
+    </style>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Histogram of Airbnb Prices in Tokyo, Japan</title>
+    </head>
+    <body>
+        <h1>Histogram of Airbnb Prices in Tokyo, Japan</h1>
+        <img src="data:image/png;base64,{image_base64}" alt="Histogram of Airbnb Prices in Tokyo, Japan">
+    </body>
+    </html>
+    """
+    return render_template_string(html_content)
+
 
 
 if __name__ == "__main__":
