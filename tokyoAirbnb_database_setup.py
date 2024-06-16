@@ -2,7 +2,7 @@
 import warnings
 warnings.filterwarnings('ignore')
 
-from flask import Flask, render_template_string
+from flask import Flask, render_template_string, send_file
 
 import sqlalchemy
 from sqlalchemy.ext.automap import automap_base
@@ -11,6 +11,11 @@ from sqlalchemy import create_engine
 from sqlalchemy import func
 import numpy as np
 import base64
+import plotly.express as px
+import json
+import pandas as pd
+import plotly.graph_objs as go
+from plotly.subplots import make_subplots
 
 #################################################
 # Database Setup
@@ -137,6 +142,9 @@ def welcome():
                     <li>/api/v1.0/Listings_Counts_By_Neighborhood</li>
                     <li>"/api/v1.0/Overall_Prices"</li>
                     <li>"/api/v1.0/Price_Distribution_Top15_Neighborhoods"</li>
+                    <li>"/api/v1.0/AbelHeatMap"</li>
+                    <li>"/api/v1.0/choropleth_map_neighborhoods"</li>
+                    <li>"/api/v1.0/Tokyo_Airbnb_Map_Room_Type"</li>
                 </ul>
             </div>
         </div>
@@ -144,6 +152,11 @@ def welcome():
     </html>
     """)
 
+
+
+##############################################
+#Route for listings by neighbhorhood barchart
+##############################################
 @app.route("/api/v1.0/Listings_Counts_By_Neighborhood")
 def neighbourhoods():
     # Read the saved PNG file and encode it to base64
@@ -211,7 +224,11 @@ def prices():
     """
     return render_template_string(html_content)
 
+
+
+##############################################
 #Route for boxplot showing price distribution for top 15 neighborhoods
+##############################################
 @app.route("/api/v1.0/Price_Distribution_Top15_Neighborhoods")
 def top15pricedistribution():
     with open('Resources/price_distribution.png', 'rb') as image_file:
@@ -245,6 +262,187 @@ def top15pricedistribution():
     """
     return render_template_string(html_content)
 
+
+##############################################
+#Route for choropleth map of neighborhoods
+##############################################
+
+@app.route("/api/v1.0/choropleth_map_neighborhoods")
+def generate_choropleth_map():
+# Function to calculate centroid of a polygon
+    def calculate_centroid(coords):
+        x = [p[0] for p in coords]
+        y = [p[1] for p in coords]
+        centroid_x = sum(x) / len(coords)
+        centroid_y = sum(y) / len(coords)
+        return [centroid_y, centroid_x]
+
+    # Read the GeoJSON file
+    geojson_file_path = 'Resources/neighbourhoods.geojson'  
+    with open(geojson_file_path) as f:
+        geojson_data = json.load(f)
+
+    # Read the CSV file
+    csv_file_path = 'Resources/updated_summarylist.csv'
+    airbnb_data = pd.read_csv(csv_file_path)
+
+    #Extract necessary columns from the CSV
+    airbnb_data = airbnb_data[['latitude', 'longitude', 'name','neighbourhood', 'room_type', 'price']]
+
+    # Step 4: Extract polygons and properties from GeoJSON
+    features = geojson_data['features']
+
+    polygons = []
+    neighborhood_names = []
+
+    for feature in features:
+        geometry_type = feature['geometry']['type']
+        neighborhood = feature['properties'].get('neighbourhood', 'Unknown')
+        
+        if geometry_type == 'MultiPolygon':
+            for polygon in feature['geometry']['coordinates']:
+                # Flatten the polygon coordinates
+                flat_polygon = []
+                for coord in polygon[0]:
+                    flat_polygon.append(coord)
+                
+                polygons.append(flat_polygon)
+                neighborhood_names.append(neighborhood)
+
+    # Convert to DataFrame for Plotly
+    neighborhood_df = pd.DataFrame({
+        'polygon': polygons,
+        'neighborhood': neighborhood_names
+    })
+
+    # Create Plotly figure with GeoJSON
+    fig = px.choropleth_mapbox(
+        neighborhood_df,
+        geojson=geojson_data,
+        locations='neighborhood',
+        featureidkey="properties.neighbourhood",
+        color='neighborhood',
+        center={"lat": 35.6895, "lon": 139.6917},
+        mapbox_style="carto-positron",
+        zoom=10,
+        opacity=0.5
+    )
+
+    fig.update_geos(fitbounds="locations", visible=True)
+    fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
+
+    # Save the choropleth map as an HTML file
+    fig.write_html("Resources/choropleth_map.html")
+
+    # Return the HTML content as a response with the appropriate Content-Type
+    return send_file("Resources/choropleth_map.html", mimetype='text/html')
+
+##############################################
+#Route for map with dropdown of room type
+##############################################
+@app.route("/api/v1.0/Tokyo_Airbnb_Map_Room_Type")
+def roomtypemap():
+    import plotly.graph_objs as go
+    from plotly.subplots import make_subplots
+
+    # Read the CSV file
+    csv_file_path = 'Resources/updated_summarylist.csv'
+    airbnb_data = pd.read_csv(csv_file_path)
+
+    #Extract necessary columns from the CSV
+    airbnb_data = airbnb_data[['latitude', 'longitude', 'name','neighbourhood', 'room_type', 'price']]
+    airbnb_data['room_type'].value_counts()
+    airbnb_home = airbnb_data[airbnb_data['room_type']=='Entire home/apt']
+    airbnb_private = airbnb_data[airbnb_data['room_type']=='Private room']
+    airbnb_shared = airbnb_data[airbnb_data['room_type']=='Shared room']
+    airbnb_hotel = airbnb_data[airbnb_data['room_type']=='Hotel room']
+
+    # Create traces for the dropdown
+    home = go.Scattermapbox(
+        lat=airbnb_home['latitude'],
+        lon=airbnb_home['longitude'],
+        mode='markers',
+        marker=dict(size=10, color='blue'),
+        text=[airbnb_home['name'],airbnb_home['neighbourhood'],airbnb_home['price']],
+        name='Entire Homes',
+    )
+    private = go.Scattermapbox(
+        lat=airbnb_private['latitude'],
+        lon=airbnb_private['longitude'],
+        mode='markers',
+        marker=dict(size=10, color='green'),
+        text=[airbnb_private['name'],airbnb_private['neighbourhood'],airbnb_private['price']],
+        name='Private Rooms',
+    )
+    shared = go.Scattermapbox(
+        lat=airbnb_shared['latitude'],
+        lon=airbnb_shared['longitude'],
+        mode='markers',
+        marker=dict(size=10, color='red'),
+        text=[airbnb_shared['name'],airbnb_shared['neighbourhood'],airbnb_shared['price']],
+        name='Shared Rooms',
+    )
+    hotel = go.Scattermapbox(
+        lat=airbnb_hotel['latitude'],
+        lon=airbnb_hotel['longitude'],
+        mode='markers',
+        marker=dict(size=10, color='yellow'),
+        text=[airbnb_hotel['name'],airbnb_hotel['neighbourhood'],airbnb_hotel['price']],
+        name='Hotel Rooms',
+    )
+
+    # Create layout with dropdown
+    layout = go.Layout(
+        title='Airbnbs with Different Room Types',
+        mapbox=dict(
+            style='open-street-map',
+            zoom=10,
+            center=dict(lat=35.6895, lon=139.6917)
+        ),
+        updatemenus=[
+            {
+                'buttons': [
+                    {
+                        'label': 'Entire Homes/Apts',
+                        'method': 'update',
+                        'args': [{'visible': [True, False, False, False]}, {'title': 'Entire Homes'}]
+                    },
+                    {
+                        'label': 'Private Rooms',
+                        'method': 'update',
+                        'args': [{'visible': [False, True, False, False]}, {'title': 'Private Rooms'}]
+                    },
+                    {
+                        'label': 'Shared Rooms',
+                        'method': 'update',
+                        'args': [{'visible': [False, False, True, False]}, {'title': 'Shared Rooms'}]
+                    },
+                    {
+                        'label': 'Hotel Rooms',
+                        'method': 'update',
+                        'args': [{'visible': [False, False, False, True]}, {'title': 'Hotel Rooms'}]
+                    },
+                ],
+                'direction': 'down',
+                'showactive': True,
+            }
+        ]
+    )
+
+    # Create figure
+    ddMap = make_subplots(rows=1, cols=1, subplot_titles=('Interactive Dropdown Map',))
+    ddMap.add_trace(home)
+    ddMap.add_trace(private)
+    ddMap.add_trace(shared)
+    ddMap.add_trace(hotel)
+    ddMap.update_layout(layout)
+    ddMap.show()
+
+    # Save to HTML files
+    import plotly.offline as pyo
+    import os
+    output_file_path = os.path.join('Resources', 'interactiveMap_byRoomtype.html')
+    pyo.plot(ddMap, filename=output_file_path)
 
 if __name__ == "__main__":
     app.run(debug=True)
