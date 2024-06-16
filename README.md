@@ -21,8 +21,8 @@ Presented by Abel Dumecha, Amanda Liu, Cassidy Schultheis, and Sophia Emanuel.
   - Uploaded cleaned csv file as 'updated_summarylist.csv' and uploaded the data into a SQLite file named 'tokyoAirbnb.sqlite'
  
  ## Visualizations and Interactivity
-    - Flask App with different rounds showing a map (using Leaflets.js) with filterable dropdown menus.
-    - Heatmap of Prices by Neighborhoos, wisualizing the price differences using Plotly.
-    - Box plot of Prices by Neighborhood, displaying the price variation using Seaborn.
-    - Histogram of Prices using Seaborn to show overall price distribution.
-    - Bar Chart of Neighborhoods versus the Listing Count, using MatplotLib to identify the neighborhoods with the most listings.
+- Flask App with different rounds showing a map (using Leaflets.js) with filterable dropdown menus.
+- Heatmap of Prices by Neighborhoos, wisualizing the price differences using Plotly.
+- Box plot of Prices by Neighborhood, displaying the price variation using Seaborn.
+- Histogram of Prices using Seaborn to show overall price distribution.
+- Bar Chart of Neighborhoods versus the Listing Count, using MatplotLib to identify the neighborhoods with the most listings.
