@@ -130,12 +130,13 @@ def welcome():
                 <h2>Github Repository</h2>
                 <p><a href="https://github.com/sophiagemanuel/Tokyo-Airbnb" target="_blank">https://github.com/sophiagemanuel/Tokyo-Airbnb</a></p>
             </div>
-
+            
             <div class = "routes">
                 <h2>Visualization Routes</h2>
                 <ul>
-                    <li>/api/v1.0/Listings-By-Neighborhood</li>
-                    <li>/api/v1.0/Prices</li>
+                    <li>/api/v1.0/Listings_Counts_By_Neighborhood</li>
+                    <li>"/api/v1.0/Overall_Prices"</li>
+                    <li>"/api/v1.0/Price_Distribution_Top15_Neighborhoods"</li>
                 </ul>
             </div>
         </div>
@@ -143,7 +144,7 @@ def welcome():
     </html>
     """)
 
-@app.route("/api/v1.0/Listings-By-Neighborhood")
+@app.route("/api/v1.0/Listings_Counts_By_Neighborhood")
 def neighbourhoods():
     # Read the saved PNG file and encode it to base64
     with open('Resources/barchart_of_neighborhoodlistings_in_tokyo.png', 'rb') as image_file:
@@ -177,7 +178,7 @@ def neighbourhoods():
     """
     return render_template_string(html_content)
 
-@app.route("/api/v1.0/Prices")
+@app.route("/api/v1.0/Overall_Prices")
 def prices():
     with open('Resources/histogram_of_prices_in_tokyo.png', 'rb') as image_file:
         image_base64 = base64.b64encode(image_file.read()).decode('utf-8')
@@ -210,6 +211,39 @@ def prices():
     """
     return render_template_string(html_content)
 
+#Route for boxplot showing price distribution for top 15 neighborhoods
+@app.route("/api/v1.0/Price_Distribution_Top15_Neighborhoods")
+def top15pricedistribution():
+    with open('Resources/price_distribution.png', 'rb') as image_file:
+        image_base64 = base64.b64encode(image_file.read()).decode('utf-8')
+
+    # Create an HTML string with the base64 image embedded
+    html_content = f"""
+    <!DOCTYPE html>
+    <html lang="en">
+    <style>
+        body {{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }}
+        h1 {{
+            text-align: center;
+            color: black;
+        }}
+    </style>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Price Distribution for Top 15 Neighborhoods in Tokyo</title>
+    </head>
+    <body>
+        <h1>Price Distribution for Top 15 Neighborhoods in Tokyo</h1>
+        <img src="data:image/png;base64,{image_base64}" alt="Price Distribution for Top 15 Neighborhoods in Tokyo">
+    </body>
+    </html>
+    """
+    return render_template_string(html_content)
 
 
 if __name__ == "__main__":
