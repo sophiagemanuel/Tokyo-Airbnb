@@ -357,13 +357,24 @@ def roomtypemap():
     airbnb_shared = airbnb_data[airbnb_data['room_type']=='Shared room']
     airbnb_hotel = airbnb_data[airbnb_data['room_type']=='Hotel room']
 
+    # Making the text for hoverinfo
+    airbnb_home['text'] = airbnb_home.apply(
+    lambda row: f"Name: {row['name']}<br>Neighbourhood: {row['neighbourhood']}<br>Price: ¥{row['price']}", axis=1)
+    airbnb_private['text'] = airbnb_private.apply(
+    lambda row: f"Name: {row['name']}<br>Neighbourhood: {row['neighbourhood']}<br>Price: ¥{row['price']}", axis=1)
+    airbnb_shared['text'] = airbnb_shared.apply(
+    lambda row: f"Name: {row['name']}<br>Neighbourhood: {row['neighbourhood']}<br>Price: ¥{row['price']}", axis=1)
+    airbnb_hotel['text'] = airbnb_hotel.apply(
+    lambda row: f"Name: {row['name']}<br>Neighbourhood: {row['neighbourhood']}<br>Price: ¥{row['price']}", axis=1)
+
     # Create traces for the dropdown
     home = go.Scattermapbox(
         lat=airbnb_home['latitude'],
         lon=airbnb_home['longitude'],
         mode='markers',
         marker=dict(size=10, color='blue'),
-        text=[airbnb_home['name'],airbnb_home['neighbourhood'],airbnb_home['price']],
+        text=airbnb_home['text'],
+        hoverinfo='text',
         name='Entire Homes',
     )
     private = go.Scattermapbox(
@@ -371,7 +382,8 @@ def roomtypemap():
         lon=airbnb_private['longitude'],
         mode='markers',
         marker=dict(size=10, color='green'),
-        text=[airbnb_private['name'],airbnb_private['neighbourhood'],airbnb_private['price']],
+        text=airbnb_private['text'],
+        hoverinfo='text',
         name='Private Rooms',
     )
     shared = go.Scattermapbox(
@@ -379,7 +391,8 @@ def roomtypemap():
         lon=airbnb_shared['longitude'],
         mode='markers',
         marker=dict(size=10, color='red'),
-        text=[airbnb_shared['name'],airbnb_shared['neighbourhood'],airbnb_shared['price']],
+        text=airbnb_shared['text'],
+        hoverinfo='text',
         name='Shared Rooms',
     )
     hotel = go.Scattermapbox(
@@ -387,7 +400,8 @@ def roomtypemap():
         lon=airbnb_hotel['longitude'],
         mode='markers',
         marker=dict(size=10, color='yellow'),
-        text=[airbnb_hotel['name'],airbnb_hotel['neighbourhood'],airbnb_hotel['price']],
+        text=airbnb_hotel['text'],
+        hoverinfo='text',
         name='Hotel Rooms',
     )
 
