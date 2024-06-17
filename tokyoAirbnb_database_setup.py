@@ -436,13 +436,9 @@ def roomtypemap():
     ddMap.add_trace(shared)
     ddMap.add_trace(hotel)
     ddMap.update_layout(layout)
-    ddMap.show()
 
-    # Save to HTML files
-    import plotly.offline as pyo
-    import os
-    output_file_path = os.path.join('Resources', 'interactiveMap_byRoomtype.html')
-    pyo.plot(ddMap, filename=output_file_path)
+    # Return the HTML content of the Plotly map
+    return ddMap.to_html(include_plotlyjs='cdn')
 
 if __name__ == "__main__":
     app.run(debug=True)
