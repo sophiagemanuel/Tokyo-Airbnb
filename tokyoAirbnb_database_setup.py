@@ -155,14 +155,14 @@ def welcome():
             <div class = "routes">
                 <h2>Visualization Routes</h2>
                 <ul>
-                    <li><a href="/api/v1.0/Listings_Counts_By_Neighborhood"><button>Listings Counts By Neighborhood</button></a></li>
-                    <li><a href="/api/v1.0/Overall_Prices"><button>Overall Prices</button></a></li>
-                    <li><a href="/api/v1.0/Price_Distribution_Top15_Neighborhoods"><button>Price Distribution Top 15 Neighborhoods</button></a></li>
-                    <li><a href="/api/v1.0/HeatMapTop15AveragePricebyNeighbourhoodandRoomType"><button>Heatmap Average Price by Top 15 Neighborhoods and Room Type</button></a></li>
-                    <li><a href="/api/v1.0/HeatMapAllAveragePricebyNeighbourhoodandRoomType"><button>Heatmap Average Price by All Neighborhoods and Room Type</button></a></li>
-                    <li><a href="/api/v1.0/HeatMapTop15AveragePricebyNeighborhoodandBedroom"><button>Heatmap Average Price by Top 15 Neighborhoods and Number of Bedrooms</button></a></li>
-                    <li><a href="/api/v1.0/choropleth_map_neighborhoods"><button>Choropleth Map Neighborhoods</button></a></li>
-                    <li><a href="/api/v1.0/Tokyo_Airbnb_Map_Room_Type"><button>Tokyo Airbnb Map Room Type</button></a></li>
+                    <li><a href="/api/v1.0/Listings_Counts_By_Neighborhood"><button>Number of Listings by Neighborhood in Tokyo, Japan</button></a></li>
+                    <li><a href="/api/v1.0/Overall_Prices"><button>Distribution of Airbnb Prices in Tokyo, Japan</button></a></li>
+                    <li><a href="/api/v1.0/Price_Distribution_Top15_Neighborhoods"><button>Price Distribution for Top 15 Neighborhoods in Tokyo, Japan</button></a></li>
+                    <li><a href="/api/v1.0/HeatMapTop15AveragePricebyNeighbourhoodandRoomType"><button>Average Price for Top 15 Neighborhoods by Room Type in Tokyo, Japan</button></a></li>
+                    <li><a href="/api/v1.0/HeatMapAllAveragePricebyNeighbourhoodandRoomType"><button>Average Price for All Neighborhoods by Room Type in Tokyo, Japan</button></a></li>
+                    <li><a href="/api/v1.0/HeatMapTop15AveragePricebyNeighborhoodandBedroom"><button>Average Price for Top 15 Neighborhoods by Number of Bedrooms in Tokyo, Japan</button></a></li>
+                    <li><a href="/api/v1.0/choropleth_map_neighborhoods"><button>Choropleth Map Airbnb Neighborhoods in Tokyo, Japan</button></a></li>
+                    <li><a href="/api/v1.0/Tokyo_Airbnb_Map_Room_Type"><button>Airbnb Locations Filtered By Room Type in Tokyo, Japan</button></a></li>
                 </ul>
             </div>
 
@@ -238,11 +238,11 @@ def prices():
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Histogram of Airbnb Prices in Tokyo, Japan</title>
+        <title>Distribution of Airbnb Prices in Tokyo, Japan</title>
     </head>
     <body>
-        <h1>Histogram of Airbnb Prices in Tokyo, Japan</h1>
-        <img src="data:image/png;base64,{image_base64}" alt="Histogram of Airbnb Prices in Tokyo, Japan">
+        <h1>Distribution of Airbnb Prices in Tokyo, Japan</h1>
+        <img src="data:image/png;base64,{image_base64}" alt="Distribution of Airbnb Prices in Tokyo, Japan">
     </body>
     </html>
     """
