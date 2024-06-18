@@ -72,7 +72,7 @@ def welcome():
                 align-items: center;
             }
             .container {
-                background-color: #fff;
+                background-color: #cfe0e8;
                 max-width: 800px;
                 width: 90%;
                 padding: 20px;
@@ -85,24 +85,30 @@ def welcome():
                 color: #333;
             }
             p {
-                color: #555;
+                color: #000000;
                 line-height: 1.6;
             }
-            .members, .routes, .data {
+            .members, .routes, .data, .cleaning{
                 margin: 20px 0;
             }
-            .members ul, .routes ul, .data ul {
+            .members ul, .routes ul, .data ul, .cleaning ul{
                 list-style-type: none;
                 padding: 0;
             }
-            .members li, .routes li, .data li {
-                background-color: #f1f1f1;
+            .members li, .github p, .routes li, .data li, .cleaning li {
+                background-color: #b7d7e8;
                 margin: 5px 0;
                 padding: 10px;
                 border-radius: 4px;
             }
+            .data li li {
+                background-color: #87bdd8;
+                margin: 10px;
+                padding: 10px;
+                border-radius: 4px;
+            }
             .data a {
-                color: #1a73e8;
+                color: #000000;
                 text-decoration: none;
             }
         </style>
@@ -112,46 +118,59 @@ def welcome():
             <h1>Listing Activity of Tokyo Airbnbs</h1>
             <p>With the rise in travel post-pandemic and increased popularity of unique Airbnb travel accommodations, we wanted to explore the best locations and prices for Airbnbs in Tokyo, Japan.</p>
             
-            <div class="members">
-                <h2>Members</h2>
+                <div class="members">
+                    <h2>Members</h2>
+                    <ul>
+                        <li>Abel Dumecha</li>
+                        <li>Amanda Liu</li>
+                        <li>Cassidy Schultheis</li>
+                        <li>Sophia Emanuel</li>
+                    </ul>
+                </div>
+            <div class="data">
+                <h2>Data</h2>
                 <ul>
-                    <li>Sophia</li>
-                    <li>Cassidy</li>
-                    <li>Amanda</li>
-                    <li>Abel</li>
+                    <li>
+                        <a href="https://www.kaggle.com/datasets/lucamassaron/tokyo-airbnb-open-data-2023?select=reviews.csv" target="_blank">Kaggle Dataset</a>
+                        <ul>
+                            <li>- summery_listings.csv</li>
+                            <li>- Neighborhoods.geojson</li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
-        <div class="data">
-            <h2>Data</h2>
-            <ul>
-                <li>
-                    <a href="https://www.kaggle.com/datasets/lucamassaron/tokyo-airbnb-open-data-2023?select=reviews.csv" target="_blank">Kaggle Dataset</a>
-                    <ul>
-                        <li>- summery_listings.csv</li>
-                        <li>- Neighborhoods.geojson</li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
+            
+            <div class ="cleaning">
+                <h2>Data Cleaning</h2>
+                <ul>
+                    <li>Delete unwanted columns</li>
+                    <li>Split specific columns (ex: name column into separate beds and baths columns)</li>
+                    <li>Remove unwanted symbols</li>
+                    <li>Remove rows with values that have zeros or NaN</li>
+                    <li>Modify data types of certain column values</li>
+                    <li>Reorder columns</li>
+                </ul>
+            </div>
+                
+            <div class = "routes">
+                <h2>Visualization Routes</h2>
+                <ul>
+                    <li><a href="/api/v1.0/Listings_Counts_By_Neighborhood"><button>Listings Counts By Neighborhood</button></a></li>
+                    <li><a href="/api/v1.0/Overall_Prices"><button>Overall Prices</button></a></li>
+                    <li><a href="/api/v1.0/Price_Distribution_Top15_Neighborhoods"><button>Price Distribution Top 15 Neighborhoods</button></a></li>
+                    <li><a href="/api/v1.0/HeatMapTop15AveragePricebyNeighbourhoodandRoomType"><button>Heatmap Average Price by Top 15 Neighborhoods and Room Type</button></a></li>
+                    <li><a href="/api/v1.0/HeatMapAllAveragePricebyNeighbourhoodandRoomType"><button>Heatmap Average Price by All Neighborhoods and Room Type</button></a></li>
+                    <li><a href="/api/v1.0/HeatMapTop15AveragePricebyNeighborhoodandBedroom"><button>Heatmap Average Price by Top 15 Neighborhoods and Number of Bedrooms</button></a></li>
+                    <li><a href="/api/v1.0/choropleth_map_neighborhoods"><button>Choropleth Map Neighborhoods</button></a></li>
+                    <li><a href="/api/v1.0/Tokyo_Airbnb_Map_Room_Type"><button>Tokyo Airbnb Map Room Type</button></a></li>
+                </ul>
+            </div>
 
             <div class="github">
                 <h2>Github Repository</h2>
                 <p><a href="https://github.com/sophiagemanuel/Tokyo-Airbnb" target="_blank">Github Repository</a></p>
-            </div>
-            
-            <div class = "routes">
-                <h2>Visualization Routes</h2>
-                <ul>
-                <li><a href="/api/v1.0/Listings_Counts_By_Neighborhood"><button>Listings Counts By Neighborhood</button></a></li>
-                <li><a href="/api/v1.0/Overall_Prices"><button>Overall Prices</button></a></li>
-                <li><a href="/api/v1.0/Price_Distribution_Top15_Neighborhoods"><button>Price Distribution Top 15 Neighborhoods</button></a></li>
-                <li><a href="/api/v1.0/HeatMapTop15AveragePricebyNeighbourhoodandRoomType"><button>Heatmap Average Price by Top 15 Neighborhoods and Room Type</button></a></li>
-                <li><a href="/api/v1.0/HeatMapAllAveragePricebyNeighbourhoodandRoomType"><button>Heatmap Average Price by All Neighborhoods and Room Type</button></a></li>
-                <li><a href="/api/v1.0/HeatMapTop15AveragePricebyNeighborhoodandBedroom"><button>Heatmap Average Price by Top 15 Neighborhoods and Number of Bedrooms</button></a></li>
-                <li><a href="/api/v1.0/choropleth_map_neighborhoods"><button>Choropleth Map Neighborhoods</button></a></li>
-                <li><a href="/api/v1.0/Tokyo_Airbnb_Map_Room_Type"><button>Tokyo Airbnb Map Room Type</button></a></li>
-                </ul>
-            </div>
+            </div>   
+
         </div>
     </body>
     </html>
