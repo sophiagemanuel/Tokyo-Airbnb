@@ -121,30 +121,35 @@ def welcome():
                     <li>Abel</li>
                 </ul>
             </div>
-
-            <div class="data">
-                <h2>Data</h2>
-                <ul>
-                    <li><a href="https://www.kaggle.com/datasets/lucamassaron/tokyo-airbnb-open-data-2023?select=reviews.csv" target="_blank">Kaggle Dataset</a></li>
-                    <li>summery_listings.csv</li>
-                    <li>Neighborhoods.geojson</li>
-                </ul>
-            </div>
+        <div class="data">
+            <h2>Data</h2>
+            <ul>
+                <li>
+                    <a href="https://www.kaggle.com/datasets/lucamassaron/tokyo-airbnb-open-data-2023?select=reviews.csv" target="_blank">Kaggle Dataset</a>
+                    <ul>
+                        <li>- summery_listings.csv</li>
+                        <li>- Neighborhoods.geojson</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
 
             <div class="github">
                 <h2>Github Repository</h2>
-                <p><a href="https://github.com/sophiagemanuel/Tokyo-Airbnb" target="_blank">https://github.com/sophiagemanuel/Tokyo-Airbnb</a></p>
+                <p><a href="https://github.com/sophiagemanuel/Tokyo-Airbnb" target="_blank">Github Repository</a></p>
             </div>
             
             <div class = "routes">
                 <h2>Visualization Routes</h2>
                 <ul>
-                    <li>/api/v1.0/Listings_Counts_By_Neighborhood</li>
-                    <li>"/api/v1.0/Overall_Prices"</li>
-                    <li>"/api/v1.0/Price_Distribution_Top15_Neighborhoods"</li>
-                    <li>"/api/v1.0/AbelHeatMap"</li>
-                    <li>"/api/v1.0/choropleth_map_neighborhoods"</li>
-                    <li>"/api/v1.0/Tokyo_Airbnb_Map_Room_Type"</li>
+                <li><a href="/api/v1.0/Listings_Counts_By_Neighborhood"><button>Listings Counts By Neighborhood</button></a></li>
+                <li><a href="/api/v1.0/Overall_Prices"><button>Overall Prices</button></a></li>
+                <li><a href="/api/v1.0/Price_Distribution_Top15_Neighborhoods"><button>Price Distribution Top 15 Neighborhoods</button></a></li>
+                <li><a href="/api/v1.0/HeatMapTop15AveragePricebyNeighbourhoodandRoomType"><button>Heatmap Average Price by Top 15 Neighborhoods and Room Type</button></a></li>
+                <li><a href="/api/v1.0/HeatMapAllAveragePricebyNeighbourhoodandRoomType"><button>Heatmap Average Price by All Neighborhoods and Room Type</button></a></li>
+                <li><a href="/api/v1.0/HeatMapTop15AveragePricebyNeighborhoodandBedroom"><button>Heatmap Average Price by Top 15 Neighborhoods and Number of Bedrooms</button></a></li>
+                <li><a href="/api/v1.0/choropleth_map_neighborhoods"><button>Choropleth Map Neighborhoods</button></a></li>
+                <li><a href="/api/v1.0/Tokyo_Airbnb_Map_Room_Type"><button>Tokyo Airbnb Map Room Type</button></a></li>
                 </ul>
             </div>
         </div>
@@ -262,6 +267,113 @@ def top15pricedistribution():
     """
     return render_template_string(html_content)
 
+##############################################
+#Price Disribution for Top 15 Neighborhoods Including Room Type
+##############################################
+@app.route("/api/v1.0/HeatMapTop15AveragePricebyNeighbourhoodandRoomType")
+def top15priceroom():
+    with open('Resources/HeatMapTop15AveragePricebyNeighbourhoodandRoomType.png', 'rb') as image_file:
+        image_base64 = base64.b64encode(image_file.read()).decode('utf-8')
+
+    # Create an HTML string with the base64 image embedded
+    html_content = f"""
+    <!DOCTYPE html>
+    <html lang="en">
+    <style>
+        body {{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }}
+        h1 {{
+            text-align: center;
+            color: black;
+        }}
+    </style>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Average Price for Top 15 Neighborhoods by Room Type in Tokyo, Japan </title>
+    </head>
+    <body>
+        <h1>Average Price for Top 15 Neighborhoods by Room Type in Tokyo, Japan </h1>
+        <img src="data:image/png;base64,{image_base64}" alt="Average Price for Top 15 Neighborhoods by Room Type in Tokyo, Japan">
+    </body>
+    </html>
+    """
+    return render_template_string(html_content)
+
+##############################################
+#Price Disribution for All Neighborhoods Including Room Type
+##############################################
+@app.route("/api/v1.0/HeatMapAllAveragePricebyNeighbourhoodandRoomType")
+def allpriceroom():
+    with open('Resources/HeatMapAllAveragePricebyNeighbourhoodandRoomType.png', 'rb') as image_file:
+        image_base64 = base64.b64encode(image_file.read()).decode('utf-8')
+
+    # Create an HTML string with the base64 image embedded
+    html_content = f"""
+    <!DOCTYPE html>
+    <html lang="en">
+    <style>
+        body {{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }}
+        h1 {{
+            text-align: center;
+            color: black;
+        }}
+    </style>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Average Price for All Neighborhoods by Room Type in Tokyo, Japan </title>
+    </head>
+    <body>
+        <h1>Average Price for All Neighborhoods by Room Type in Tokyo, Japan </h1>
+        <img src="data:image/png;base64,{image_base64}" alt="Average Price for All Neighborhoods by Room Type in Tokyo, Japan">
+    </body>
+    </html>
+    """
+    return render_template_string(html_content)
+
+##############################################
+#Price Disribution for All Neighborhoods Including Room Type
+##############################################
+@app.route("/api/v1.0/HeatMapTop15AveragePricebyNeighborhoodandBedroom")
+def top15pricebedrooms():
+    with open('Resources/HeatMapTop15AveragePricebyNeighbourhoodandBedrooms.png', 'rb') as image_file:
+        image_base64 = base64.b64encode(image_file.read()).decode('utf-8')
+
+    # Create an HTML string with the base64 image embedded
+    html_content = f"""
+    <!DOCTYPE html>
+    <html lang="en">
+    <style>
+        body {{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }}
+        h1 {{
+            text-align: center;
+            color: black;
+        }}
+    </style>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Average Price for Top 15 Neighborhoods by Number of Bedrooms in Tokyo, Japan</title>
+    </head>
+    <body>
+        <h1>Average Price for Top 15 Neighborhoods by Number of Bedrooms in Tokyo, Japan </h1>
+        <img src="data:image/png;base64,{image_base64}" alt="Average Price for Top 15 Neighborhoods by Number of Bedrooms in Tokyo, Japan">
+    </body>
+    </html>
+    """
+    return render_template_string(html_content)
 
 ##############################################
 #Route for choropleth map of neighborhoods
