@@ -538,7 +538,7 @@ def roomtypemap():
 
     # Create layout with dropdown
     layout = go.Layout(
-        title='Airbnbs with Different Room Types',
+        title='Airbnb Locations Filtered By Room Type in Tokyo, Japan',
         mapbox=dict(
             style='open-street-map',
             zoom=10,
