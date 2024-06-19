@@ -18,14 +18,19 @@ Presented by Abel Dumecha, Amanda Liu, Cassidy Schultheis, and Sophia Emanuel.
  
  ## Visualizations and Interactivity
  
-We created a Flask App to serve as a welcome page and display our visualizations. <br>
+**We created a Flask App to serve as a welcome page and display our visualizations.** <br>
 ![flaskApp-full](Resources/flask_welcome_page.png) <br>
 A bar chart, created with Matplotlib, displays the number of Airbnb listings by neighborhood in Tokyo, Japan.
 ![Number of Listings by Neighborhood in Tokyo, Japan](Resources/barchart_of_neighborhoodlistings_in_tokyo.png) <br>
 
-Seaborn was used to design the following visualizations:
+ - This figure was created using the filtered dataframe, containing the op 15 Airbnbs in the Tokyo region. The x-axis shows the neighborhood and the y-axis shows the numvber of listings. From the visualization of the bar chart, it can be determined that Shinjuku Ku has the most lisings. We can also see that the top 5 neighborhoods had more than 500 listings each, and the neighborhoods that come afterthat tend to have less than 250.<br>
+
+**Seaborn was used to design the following visualizations:** <br>
+
 - A histogram was developed to illustrate the overall distribution of Airbnb prices in Tokyo, Japan. <br>
 ![Distribution of Airbnb Prices in Tokyo, Japan](Resources/histogram_of_prices_in_tokyo.png) <br>
+
+ - The Histogram was created with all of the listings within the dataframe. The x-axis represents the average price in Japanese Yen, and the y-axis represents the listings. From this histogram we can determine that most Airbnbs will cost an average of 20,000 Yen (around $126.62 USD) or less per night. The higher the price goes, the less listings there will be. 
 
 - A box and whisker plot was created to visualize the price distributions of the top 15 neighborhoods with the most listings. <br>
 ![Price Distribution for Top 15 Neighborhoods in Tokyo, Japan](Resources/price_distribution.png)<br>
@@ -43,7 +48,7 @@ Seaborn was used to design the following visualizations:
 - We created an additional heatmap to show the top 15 neighborhoods with the most listings and the average price based on the number of bedrooms. <br>
 ![Average Price by Number of Bedrooms and Neighborhood](Resources/HeatMapTop15AveragePricebyNeighborhoodandBedrooms.png) <br>
 
-Ploty was used to develop the following visualizations: <br>
+**Ploty was used to develop the following visualizations:** <br>
 
 - We developed a choropleth map to visualize each neighborhood in Tokyo, Japan, color-coded by average price. <br>
 ![Choropleth Map Neighboorhoods](Resources/choropleth_map_neighborhoods.png) <br>
