@@ -23,7 +23,7 @@ Presented by Abel Dumecha, Amanda Liu, Cassidy Schultheis, and Sophia Emanuel.
 A bar chart, created with Matplotlib, displays the number of Airbnb listings by neighborhood in Tokyo, Japan.
 ![Number of Listings by Neighborhood in Tokyo, Japan](Resources/barchart_of_neighborhoodlistings_in_tokyo.png) <br>
 
- - This figure was created using the filtered dataframe, containing the top 15 Airbnbs in the Tokyo region. The x-axis shows the neighborhood and the y-axis shows the number of listings. From the visualization of the bar chart, it can be determined that Shinjuku Ku has the most lisings. We can also see that the top 5 neighborhoods had greater than 500 listings each, while the remaining neighborhoods have less than 250 listings. <br>
+ - This figure was created using the filtered dataframe, containing the top 15 Airbnbs in the Tokyo region. The x-axis shows the neighborhood and the y-axis shows the number of listings. From the visualization of the bar chart, it can be determined that Shinjuku Ku has the most listings. We can also see that the top 5 neighborhoods had greater than 500 listings each, while the remaining neighborhoods have less than 250 listings. <br>
 
 **Seaborn was used to design the following visualizations:** <br>
 
