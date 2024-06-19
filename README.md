@@ -19,7 +19,7 @@ Presented by Abel Dumecha, Amanda Liu, Cassidy Schultheis, and Sophia Emanuel.
  ## Visualizations and Interactivity
  
 We created a Flask App to serve as a welcome page and display our visualiations. <br>
-![flaskApp](https://github.com/sophiagemanuel/Tokyo-Airbnb/assets/161385170/33f210e6-f523-4836-8470-47b3f0dbdb75) <br>
+![flaskApp-full](https://github.com/sophiagemanuel/Tokyo-Airbnb/assets/161385170/2c4dff7a-8bbb-46f9-987d-c097125e868e) <br>
 A bar chart, created with Matplotlib, displays the number of Airbnb listings by neighborhood in Tokyo, Japan.
 ![Number of Listings by Neighborhood in Tokyo, Japan](Resources/barchart_of_neighborhoodlistings_in_tokyo.png) <br>
 
