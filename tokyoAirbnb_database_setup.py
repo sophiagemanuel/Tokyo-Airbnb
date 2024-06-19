@@ -141,14 +141,13 @@ def welcome():
             </div>
             
             <div class ="cleaning">
-                <h2>Data Cleaning</h2>
+                <h2>Data Cleaning/Transforming/Storing</h2>
                 <ul>
                     <li>Delete unwanted columns</li>
                     <li>Split specific columns (ex: name column into separate beds and baths columns)</li>
-                    <li>Remove unwanted symbols</li>
-                    <li>Remove rows with values that have zeros or NaN</li>
-                    <li>Modify data types of certain column values</li>
-                    <li>Reorder columns</li>
+                    <li>Remove unwanted symbols and null values</li>
+                    <li>Modify data types of certain column values and reorder columns</li>
+                    <li>Upload cleaned CSV file as 'updated_summarylist.csv' and import the data into a SQLite database named 'tokyoAirbnb.sqlite'.</li>
                 </ul>
             </div>
                 
