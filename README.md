@@ -44,8 +44,14 @@ Ploty was used to develop the following visualizations: <br>
 - We developed a choropleth map to visualize each neighborhood in Tokyo, Japan, color-coded by average price. <br>
 ![Choropleth Map Neighboorhoods](Resources/choropleth_map_neighborhoods.png) <br>
 
+This map was made from the GeoJSON file we retrieved from our data set. That file stores mostly coordinates that form a multi-polygon that describes each neighborhood, so we wrote a function that flattens out the coordinates if its shape is a multi-polygon. The function checks the "type" in "geometry" in "feature" to conform the shape. The function will also retrieve the name of the associated neighborhood from that file and storing all the them in a "neighborhood_names" list, while the polygons are stored in another list called "polygons". They combined to be a Dataframe with the polygons and their names. Using that Dataframe, we can then create the map using Plotly. We put together the colored map centered around Tokyo with "choropleth_mapbox" from Plotly using the neighborhood names as "featureidkey".
+
+In the end, we have a colored map outlining all 46 neighborhoods from our GeoJSON file as seen in the image. On the side, the legends indicates the color for each neighborhood, but when you hover over each area, a pop-up will also say the name of the neighborhood.
+
 - An interactive map was created to display all Airbnb listings, allowing users to filter by room type via a dropdown menu. <br>
 ![Airbnb Locations Filtered By Room Type in Tokyo, Japan](Resources/Tokyo_Airbnb_Map_Room_Type.png) <br>
+
+This map was made from the cleaned CSV file of the Airbnb listings in Tokyo. We separated the dataset into four sets by their listed "room_type", including "Entire home/apt", "Private room", "Shared room", and "Hotel room". Then we combined info we want to show (the name of the listing, the neighborhood that its in, and the price per night) when the user hovers over the property location which was marked by a color dot on the map. The legend shows which color means which room type. A clearer view of the properties will show once the user selects the type of property they are looking for.
 
 ## GitHub Repository
 
