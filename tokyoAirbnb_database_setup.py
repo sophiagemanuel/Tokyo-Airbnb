@@ -143,11 +143,11 @@ def welcome():
             <div class ="cleaning">
                 <h2>Data Cleaning/Transforming/Storing</h2>
                 <ul>
-                    <li>Delete unwanted columns</li>
-                    <li>Split specific columns (ex: name column into separate beds and baths columns)</li>
-                    <li>Remove unwanted symbols and null values</li>
-                    <li>Modify data types of certain column values and reorder columns</li>
-                    <li>Upload cleaned CSV file as 'updated_summarylist.csv' and import the data into a SQLite database named 'tokyoAirbnb.sqlite'.</li>
+                    <li>Deleted unwanted columns</li>
+                    <li>Split specific columns (e.g., split name column into separate beds and baths columns)</li>
+                    <li>Removed unwanted symbols and null values</li>
+                    <li>Modified data types of certain column values and reordered columns</li>
+                    <li>Uploaded cleaned CSV file as 'updated_summarylist.csv' and imported the data into a SQLite database named 'tokyoAirbnb.sqlite'.</li>
                 </ul>
             </div>
                 
@@ -362,7 +362,7 @@ def allpriceroom():
 ##############################################
 @app.route("/api/v1.0/HeatMapTop15AveragePricebyNeighborhoodandBedroom")
 def top15pricebedrooms():
-    with open('Resources/HeatMapTop15AveragePricebyNeighbourhoodandBedrooms.png', 'rb') as image_file:
+    with open('Resources/HeatMapTop15AveragePricebyNeighborhoodandBedrooms.png', 'rb') as image_file:
         image_base64 = base64.b64encode(image_file.read()).decode('utf-8')
 
     # Create an HTML string with the base64 image embedded
