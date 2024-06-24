@@ -64,7 +64,7 @@ A bar chart, created with Matplotlib, displays the number of Airbnb listings by 
 - An interactive map was created to display all Airbnb listings, allowing users to filter by room type via a dropdown menu. <br>
 ![Airbnb Locations Filtered By Room Type in Tokyo, Japan](Resources/Tokyo_Airbnb_Map_Room_Type.png) <br>
 
-  - This map was made from the cleaned CSV file of the Airbnb listings in Tokyo. We separated the dataset into four sets by their listed "room_type", including "Entire home/apt", "Private room", "Shared room", and "Hotel room". Then we combined info we want to show (the name of the listing, the neighborhood that its in, and the price per night) when the user hovers over the property location which was marked by a color dot on the map. The legend shows which color means which room type. A clearer view of the properties will show once the user selects the type of property they are looking for.
+  - This map was made with Plotly from the cleaned CSV file of the Airbnb listings in Tokyo. We separated the dataset into four sets by their listed "room_type". Then we combined all the info we want to show of each listing (the name of the listing, the neighborhood that it's in, and the price per night) into one column, and when the user hovers over the property location which was marked by a color dot on the map, they can get some info on a pop-up to determine if the listing is what they are looking for. The legend shows which color means which room type. A clearer view of the properties will show once the user selects the type of property they are looking for.
 
 ## GitHub Repository
 
